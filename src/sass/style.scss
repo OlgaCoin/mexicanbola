@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+/* Default styles */
+
+html {
+	overflow:auto;	
+}
+body {
+	overflow:visible;
+	height: 100%;
+}
+html, body {
+	max-width: 100%;
+}
+body {
+	margin: 0;
+	background-color: $white;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+button, button:active, button:focus {
+	border: none;
+	outline: none;
+}
+input:focus, textarea:focus {
+	outline:0;
+}
+a, a:hover {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Blocks */
