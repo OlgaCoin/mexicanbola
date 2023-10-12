@@ -1,5 +1,5 @@
 @import 'libs/bootstrap-reboot.min';
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Play&display=swap');
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -11,13 +11,16 @@ html {
 body {
 	overflow:visible;
 	height: 100%;
+	margin: 0;
+	background-color: $white;
+	color: $t_gray;
+	font-weight: 400;
+	font-family: $f_sans;
+	font-size: 16px;
+	line-height: 1.5;
 }
 html, body {
 	max-width: 100%;
-}
-body {
-	margin: 0;
-	background-color: $white;
 }
 *,
 *:before,
@@ -39,6 +42,15 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+strong {
+	font-weight: 700;
+}
+.container {
+	max-width: 1140px;
+	position: relative;
+}
 
 
 /* Blocks */
+@import "base/fonts";
+@import "blocks/header";
