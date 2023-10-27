@@ -1,0 +1,26 @@
+.promo {
+	background: linear-gradient(260deg, rgba(238, 234, 213, .7) 0%, rgba(255, 255, 255, 0.53) 80%, rgba(231, 193, 173, 0.3) 100%);
+	&__wrapper {
+		padding-top: 100px;
+		min-height: 600px;
+		background: url('../img/promo.png') bottom right no-repeat;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			width: 810px;
+			height: 810px;
+			background: radial-gradient(64.46% 64.46% at 50% 50%, rgba(233, 173, 140, 0.27) 0%, rgba(255, 255, 255, 0.00) 90%);
+			opacity: .8;
+			border-radius: $radius;
+			left: 50%;
+			top: -120px;
+			z-index: -1;
+		}
+	}
+	&__descr {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 48px;
+	}
+}
