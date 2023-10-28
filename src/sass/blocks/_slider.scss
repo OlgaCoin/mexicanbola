@@ -1,0 +1,38 @@
+.sslider {
+	width: calc(100% + 10px); 
+   padding: 15px; 
+   margin-left: -15px; 
+   overflow: hidden; 
+	margin-bottom: 60px;
+}
+.slick-track {
+	display: flex;
+	justify-content: space-between;
+}
+.slick-list {
+	overflow: visible;
+}
+.arrows {
+	display: flex;
+	align-items: center;
+}
+.slick-arrow {
+	width: 32px;
+	height: 32px;
+	transition: $trans;
+	fill: $t_gray;
+	cursor: pointer;
+	&:hover {
+		fill: $primary_dark;
+	}
+}
+.slick-prev, .slick-next {
+	border: none;
+	background-color: #fff;
+	&:focus, &:active {
+		border: none;
+	}
+}
+.next {	
+	transform: rotate(180deg);
+}

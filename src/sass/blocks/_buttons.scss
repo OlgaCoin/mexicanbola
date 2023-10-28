@@ -10,11 +10,15 @@
 	letter-spacing: 0.16px;
 	text-transform: uppercase;
 	outline: none;	
+	&-wrapper {
+		display: flex;
+		justify-content: center;
+	}
 	&--solid {		
 		border: none;	
 		background-image: $gradient_primary;
 		box-shadow: none;
-		transition: all .4s ease-in-out;
+		transition: all .6s ease-in-out;
 		background-size: 1000% 100%;
 		&:hover {
 			border: none;
@@ -23,11 +27,28 @@
 			color: $white;
 			background-size: 100% 100%;
 			background-position: 100% 0;
-			transition: all .4s ease-in-out;
+			transition: all .6s ease-in-out;
 		}
 		&:focus {
 			border: none;
 			outline: none;
 		}
+	}
+}
+.label {
+	position: absolute;
+	display: inline-flex;
+	padding: 3px 7px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	top: 24px;
+	left: 24px;
+	color: $white;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	&--hit {
+		background: $orange;
 	}
 }

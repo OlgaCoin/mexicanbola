@@ -1,4 +1,4 @@
-.title {
+h1, h2, h3, h4, h1>a, h2>a, h3>a, h4>a {
 	font-family: $f_serif;
 	font-weight: 500;
 	color: $t_dark;
@@ -7,4 +7,18 @@
 	font-size: 42px;
 	line-height: 52px;
 	margin-bottom: 40px;
+}
+.section-title {
+	font-size: 36px;
+	line-height: 46px;
+	&--centered {
+		text-align: center;
+	}
+	&--lone {
+		margin-bottom: 82px;
+	}
+}
+.min-title {
+	font-size: 18px;
+	line-height: 22px;
 }

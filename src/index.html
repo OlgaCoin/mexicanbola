@@ -30,6 +30,16 @@
 			<path
 				d="M22.1943 18.5683L17.7906 14.5643C17.3583 14.1711 16.691 14.1917 16.2836 14.6109L13.6912 17.277C13.0672 17.1578 11.8127 16.7668 10.5214 15.4787C9.23006 14.1863 8.83898 12.9285 8.72306 12.3088L11.387 9.71534C11.8073 9.30801 11.8268 8.64176 11.4336 8.20843L7.43065 3.80576C7.0374 3.37134 6.36898 3.33018 5.92373 3.71151L3.57289 5.72759C3.38548 5.91609 3.27389 6.16526 3.25873 6.43068C3.24248 6.70151 2.93264 13.117 7.90731 18.0938C12.2471 22.4326 17.6833 22.75 19.1805 22.75C19.3993 22.75 19.5336 22.7435 19.5694 22.7413C19.8348 22.7262 20.084 22.6146 20.2714 22.4261L22.2864 20.0742C22.6699 19.6289 22.6276 18.9616 22.1943 18.5683Z" />
 		</symbol>
+		<symbol id="chevron-prev" width="32" height="32" viewBox="0 0 32 32">
+			<path d="M10 16L20 6L21.4 7.4L12.8 16L21.4 24.6L20 26L10 16Z" />
+		</symbol>
+		<symbol id="cart-icon" width="20" height="20" viewBox="0 0 20 20">
+			<g clip-path="url(#clip0_350_62)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M4.09094 17.5001C4.09094 16.5796 4.83713 15.8334 5.75761 15.8334C6.67808 15.8334 7.42428 16.5796 7.42428 17.5001C7.42428 18.4206 6.67808 19.1668 5.75761 19.1668C4.83713 19.1668 4.09094 18.4206 4.09094 17.5001Z"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2576 17.5001C13.2576 16.5796 14.0038 15.8334 14.9242 15.8334C15.8447 15.8334 16.5909 16.5796 16.5909 17.5001C16.5909 18.4206 15.8447 19.1668 14.9242 19.1668C14.0038 19.1668 13.2576 18.4206 13.2576 17.5001Z"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.0340576 1.70827C-0.0340576 1.24803 0.339038 0.874939 0.799276 0.874939H2.46594C2.85892 0.874939 3.1985 1.14949 3.2808 1.53375L4.03208 5.04161H17.4993C17.752 5.04161 17.9911 5.15631 18.1493 5.35345C18.3074 5.55059 18.3676 5.80886 18.3128 6.0556L16.9381 12.2458C16.9381 12.246 16.9382 12.2455 16.9381 12.2458C16.8157 12.8012 16.5074 13.2989 16.0644 13.6556C15.6212 14.0124 15.0696 14.2074 14.5006 14.2083L6.35763 14.2083C5.77982 14.2188 5.21609 14.0288 4.76245 13.6704C4.30615 13.3099 3.98979 12.8016 3.86781 12.2331L2.55154 6.08718C2.54516 6.06288 2.53985 6.03814 2.53566 6.01303L1.79219 2.54161H0.799276C0.339038 2.54161 -0.0340576 2.16851 -0.0340576 1.70827ZM4.38903 6.70827L5.4974 11.8835C5.49738 11.8834 5.49742 11.8836 5.4974 11.8835C5.5381 12.0729 5.64359 12.2425 5.79562 12.3626C5.94772 12.4827 6.13695 12.5461 6.33074 12.5418L6.34928 12.5416H14.4979C14.4978 12.5416 14.4981 12.5416 14.4979 12.5416C14.6874 12.5412 14.8716 12.4762 15.0192 12.3574C15.1669 12.2384 15.2697 12.0727 15.3104 11.8874L16.4606 6.70827H4.38903Z"/>
+				</g>
+		</symbol>
 	</svg>
 	<!-- /svg-sprite -->
 
@@ -91,7 +101,7 @@
 		<div class="promo">
 			<div class="container">
 				<div class="promo__wrapper">
-					<h1 class="main-title title">Украшения ручной работы <br>для беременных <br>и кормящих мам</h1>
+					<h1 class="main-title">Украшения ручной работы <br>для беременных <br>и кормящих мам</h1>
 					<div class="promo__descr">Мексиканский Бола — оберег, талисман <br>и прекрасное украшение для будущих мам
 					</div>
 					<a href="#" class="btn btn--solid">
@@ -101,9 +111,202 @@
 			</div>
 		</div>
 
+		<section class="hits section">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section-title">Хиты продаж</h2>
+
+					<div class="arrows">
+						<svg class="prev">
+							<use xlink:href="#chevron-prev"></use>
+						</svg>
+						<svg class="next">
+							<use xlink:href="#chevron-prev"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="sslider hit__slider">
+					<div class="sslider__item card">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit1.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart card__cart--filled">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit1.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart card__cart--filled" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit2.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Золотое сердце</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">2500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit3.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">3500 ₽</span>
+								<span class="card__price--gray">8500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit4.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Жемчужный "Океан" 
+							с гелиотисом</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Мексика <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">1500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit5.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div class="btn-wrapper">
+					<a href="#" target="_blank" class="btn btn--solid">
+						Перейти в магазин
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="whatis section">
+			<div class="container">
+				<h2 class="section-title section-title--centered section-title--lone">Что такое Мексиканский Бола?</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<p>***</p>
+						<p>Mexicanbola - это кулончик, который сделан специально для беременных и кормящих мам.</p>
+						<p>Внутри кулона спрятан <strong>ксилофончик</strong>, который издает звуки при ходьбе.
+						</p>
+						<img src="img/whatis/photo1.jpg" alt="photo">
+					</div>
+					<div class="col-md-4">
+						<img src="img/whatis/photo2.jpg" alt="photo">
+						<p>***</p>
+						<p>Малыш начинает слышать звуки внутри живота уже с 20й недели беременности. </p>
+						<p>Поэтому звук бола запомнится ему, и в дальнейшем малышу легче успокоиться под <strong>знакомые нотки</strong>.</p>
+					</div>
+					<div class="col-md-4">
+						<p>***</p>
+						<p>Для будущей мамы важнее всего - здоровье и спокойствие. Поэтому на некоторых кулонах нанесены <strong>специальные символы</strong>, укрепляющие здоровье, снижающие тревожность, стресс и оберегающие будущую маму.</p>
+						<img src="img/whatis/photo3.jpg" alt="photo">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="miracle section">
+			<div class="container">
+				<h2 class="section-title section-title--centered">В ожидании маленького чуда!</h2>
+				<div class="section__descr">Ожидание ребенка – это всегда чудо. Это знают и те, кто уже обзавелся <br>малышом, и те, кто еще только планирует беременность. </div>
+			</div>
+		</section>
+
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="js/libs/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
