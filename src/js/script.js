@@ -17,8 +17,6 @@ $(document).ready(function () {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		// autoplay: true,
-		// prevArrow: '<button type="button" class="slick-prev"><i class="icon-arrow_left_slider"></i></button>',
-		// nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow_right_slider"></i></button>',
 		prevArrow: $('.prev'),
 		nextArrow: $('.next'),
 		responsive: [
