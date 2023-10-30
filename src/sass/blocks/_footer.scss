@@ -1,0 +1,17 @@
+.footer {
+	border-top: $border;
+	padding: 35px 0 20px;
+	background-color: #fff;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+}
+.copyright {
+	color: $t_caption;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+}

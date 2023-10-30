@@ -1,0 +1,35 @@
+.social-block {
+	padding: 76px 0 125px;
+	background: linear-gradient(267deg, #B78A71 -3.5%, #C9A692 120.11%);
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-image: url('../img/pattern.svg');
+		background-repeat: repeat-x;
+		height: 74px;
+		width: 100%;
+		opacity: .4;
+	}
+	&__title {
+		color: $t_light;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 40px; 
+		text-transform: uppercase;
+	}
+	&__btns {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__icon {
+		width: 39px;
+		height: 39px;
+		transition: all .3s;
+		fill: $t_light;
+		margin-right: 18px;
+	}
+
+}

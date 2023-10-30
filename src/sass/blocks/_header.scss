@@ -1,3 +1,18 @@
+.menu {
+	display: inline-flex;
+	gap: 40px;
+	& li {
+		& > a {
+			display: block;
+			color: $t_gray;
+			font-weight: 500;
+			transition: $trans;
+			&:hover {
+				color: $primary_dark;
+			}
+		}
+	}
+}
 .header {
 	background-color: $white;
 	position: sticky;
@@ -14,20 +29,13 @@
 		height: 70px;
 	}
 	&__menu {
-		display: inline-flex;
-		gap: 40px;
 		& li {
 			& > a {
-				display: block;
-				line-height: 70px;
-				color: $t_gray;
-				font-weight: 500;
+				line-height: 68px;
 				padding-top: 2px;
 				border-bottom: 2px solid transparent; 
-				transition: $trans;
 				&:hover {
 					border-bottom: 2px solid $primary_dark; 
-					color: $primary_dark;
 				}
 			}
 		}
@@ -81,7 +89,3 @@
 	}
 }
 
-
-.page {
-	height: 2000px;
-}

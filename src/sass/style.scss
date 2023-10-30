@@ -48,6 +48,9 @@ strong {
 p {
 	margin-bottom: 18px;
 }
+img {
+	border-radius: $radius_sm;
+}
 .container {
 	max-width: 1140px;
 	position: relative;
@@ -63,4 +66,6 @@ p {
 @import "blocks/home";
 @import "blocks/slider";
 @import "blocks/card";
+@import "blocks/social-block";
+@import "blocks/footer";
 

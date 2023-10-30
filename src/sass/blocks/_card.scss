@@ -5,8 +5,12 @@
 	height: 480px;
 	display: flex;
 	flex-direction: column;
-	align-items: start;
+	align-items: flex-start;
 	position: relative;
+	&--sm {
+		height: auto;
+		padding-bottom: 5px;
+	}
 	&__img {
 		overflow: hidden;width: 100%;
 		height: 248px;

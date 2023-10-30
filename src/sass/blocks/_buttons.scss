@@ -34,6 +34,22 @@
 			outline: none;
 		}
 	}
+	&--inverse {
+		padding: 13px 28px;
+		border: 2px solid $t_light;
+		color: $t_light;
+		background: none;
+		transition: $trans;
+		&:hover, &:focus  {
+			background-color: $t_light;
+			border: 2px solid $white;
+			outline: none;
+			color: #B78A71;
+			.social-block__icon {
+				fill: #B78A71;
+			}
+		}
+	}
 }
 .label {
 	position: absolute;
@@ -50,5 +66,8 @@
 	text-transform: uppercase;
 	&--hit {
 		background: $orange;
+	}
+	&--new {
+		background: $green;
 	}
 }

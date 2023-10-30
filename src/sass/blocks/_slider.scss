@@ -4,6 +4,15 @@
    margin-left: -15px; 
    overflow: hidden; 
 	margin-bottom: 60px;
+	&.feedback__slider {
+		margin-bottom: 0;
+		& .sslider__item {
+			margin: 0 12px;
+		}
+		& .slick-list {
+			margin: 0 -12px;
+		}
+	}
 }
 .slick-track {
 	display: flex;
