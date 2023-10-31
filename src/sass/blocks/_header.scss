@@ -44,6 +44,17 @@
 		box-shadow: $shadow;
 		border-bottom: none;
 	}
+	&__logo {
+		& img {
+			width: 187px;
+			height: auto;
+		}
+	}
+}
+.l-wrapper {
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 .social {
 	display: inline-flex;

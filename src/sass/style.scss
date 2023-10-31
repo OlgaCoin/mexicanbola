@@ -21,6 +21,7 @@ body {
 }
 html, body {
 	max-width: 100%;
+	overflow-x:hidden;
 }
 *,
 *:before,
@@ -68,4 +69,8 @@ img {
 @import "blocks/card";
 @import "blocks/social-block";
 @import "blocks/footer";
+@import "blocks/nav-mob";
+@import "blocks/triple-grid";
+
+@import "blocks/media";
 

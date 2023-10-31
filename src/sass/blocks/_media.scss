@@ -1,0 +1,160 @@
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+	.header {
+		&__logo {
+			& img {
+				width: 164px;
+			}
+		}
+	}
+	.menu {
+		gap: 25px;
+	}
+	.social {
+		gap: 12px;
+	}
+	.promo {
+		&__wrapper {
+			padding-top: 70px;
+		}
+	}
+	.section {
+		padding: 80px 0;
+		&__header {
+			margin-bottom: 20px;
+		}
+	}
+	.sslider {
+		margin-bottom: 25px;
+	}
+	.card {
+		&__title {
+			margin-bottom: 10px;
+		}
+		&__img {
+			height: 220px;
+		}
+	}
+	.triple-grid {
+		&__item {
+			margin-bottom: 8px;
+		}
+		& .sep {
+			margin-bottom: 10px;
+			&--pad {
+				padding-top: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		&__logo {
+			& img {
+				width: 187px;
+			}
+		}
+	}
+	.menu {
+		gap: 0;
+	}
+	.social {
+		gap: 22px;
+	}
+	.promo {
+		max-height: 500px;
+		overflow: hidden;
+		&__wrapper {
+			background-position: center right;
+			background-size: 65%;
+			padding-top: 36px;
+		}
+		&__descr {
+			font-size: 16px;
+		}
+	}
+	.main-title {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	.section {
+		padding: 70px 0;
+		&__header {
+			margin-bottom: 10px;
+		}
+		&-title {
+			font-size: 32px;
+			&--lone {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.card {
+		height: 432px;
+	}
+	.triple-grid {
+		gap: 5%;
+		&__item {
+			justify-content: center;
+			padding-top: 20px;
+			flex-basis: 45%;
+			&:nth-child(3) {order: 2;}
+			&:nth-child(4) {order: 1;}
+			&:nth-child(5) {order: 3;}
+			&:nth-child(6) {order: 3;}
+		}
+		& p {
+			width: 100%;
+		}
+	}
+	
+}
+
+@media (max-width: 575px) {
+	.promo {
+		max-height: 450px;
+		&__wrapper {
+			background: none;
+			text-align: center;
+			padding-top: 40px;
+		}
+	}
+	.main-title {
+		font-size: 30px;
+		line-height: 44px;
+		margin-bottom: 34px;
+	}
+	.section {
+		padding: 45px 0;
+		&-title {
+			font-size: 26px;
+			line-height: 34px;
+		}
+	}
+	.sslider {
+		margin-bottom: 12px;
+	}
+
+}
+
+@media (max-width: 480px) {
+	.social {
+		display: none;
+	}
+	.triple-grid {
+		gap: 0;
+		&__item {
+			text-align: center;
+			flex-basis: 100%;
+			&:nth-child(3) {order: 0;}
+			&:nth-child(4) {order: 0;}
+			&:nth-child(5) {order: 0;}
+			&:nth-child(6) {order: 0;}
+		}
+		& .r-col, & .l-col {
+			align-items: center;
+		}
+	}
+}

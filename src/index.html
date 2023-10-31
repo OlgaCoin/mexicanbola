@@ -5,11 +5,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>MEXICANBOLA | Украшения ручной работы
+		для беременных и кормящих мам</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="description"
+		content="Ожидание ребенка – это всегда чудо, это знают и те, кто уже обзавелся малышом, и те, кто еще только планирует беременность. Связь между ребенком и матерью – таинственная, загадочная и гармоничная.">
 
 	<!-- Favicon  -->
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+	<link rel="manifest" href="icons/favicon/site.webmanifest">
+	<link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="icons/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="icons/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -59,26 +70,33 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__wrapper">
-					<a class="header__logo logo" href="index.html">
-						<img src="img/logo/logo.svg" alt="logo">
-					</a>
+					<div class="l-wrapper">
+						<div class="burger" title="Меню">
+							<div class="burger__row"></div>
+							<div class="burger__row"></div>
+							<div class="burger__row"></div>
+						</div>
+						<a class="header__logo logo" href="index.html">
+							<img src="img/logo.svg" alt="logo">
+						</a>
+					</div>
 					<nav class="header__nav nav">
 
-						<ul class="header__menu menu">
-							<li>
-								<a href="index.html" class="menu-item header__menu-item">Главная</a>
+						<ul class="header__menu menu menu-mob">
+							<li class="menu-item header__menu-item">
+								<a href="index.html">Главная</a>
 							</li>
-							<li>
-								<a href="#" class="menu-item header__menu-item">Каталог</a>
+							<li class=" menu-item header__menu-item">
+								<a href="#">Каталог</a>
 							</li>
-							<li>
-								<a href="#" class="menu-item header__menu-item">Магазин</a>
+							<li class="menu-item header__menu-item">
+								<a href="#">Магазин</a>
 							</li>
-							<li>
-								<a href="#" class="menu-item header__menu-item">FAQ</a>
+							<li class="menu-item header__menu-item">
+								<a href="#">FAQ</a>
 							</li>
-							<li>
-								<a href="#" class="menu-item header__menu-item">Контакты</a>
+							<li class="menu-item header__menu-item">
+								<a href="#">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -126,7 +144,6 @@
 			<div class="container">
 				<div class="section__header">
 					<h2 class="section-title">Хиты продаж</h2>
-
 					<div class="arrows">
 						<svg class="prev h-prev">
 							<use xlink:href="#chevron-prev"></use>
@@ -253,45 +270,42 @@
 						Перейти в магазин
 					</a>
 				</div>
-
 			</div>
 		</section>
 
 		<section class="whatis section section--triple">
 			<div class="container">
 				<h2 class="section-title section-title--centered section-title--lone">Что такое Мексиканский Бола?</h2>
-				<div class="row">
-					<div class="col-md-4 l-col">
+
+				<div class="triple-grid">
+					<div class="triple-grid__item l-col">
 						<p class="sep">***</p>
 						<p>Mexicanbola — это кулончик, который сделан специально для беременных и кормящих мам.</p>
 						<p>Внутри кулона спрятан <strong>ксилофончик</strong>, который издает звуки при ходьбе.
 						</p>
 					</div>
-					<div class="col-md-4 m-col">
+					<div class="triple-grid__item m-col">
 						<img src="img/whatis/photo2.jpg" alt="photo" class="triple-img">
 					</div>
-					<div class="col-md-4 r-col">
+					<div class="triple-grid__item r-col">
 						<p class="sep">***</p>
 						<p>Для будущей мамы важнее всего — здоровье и спокойствие. Поэтому на некоторых кулонах нанесены
 							<strong>специальные символы</strong>, укрепляющие здоровье, снижающие тревожность, стресс
 							и оберегающие будущую маму.
 						</p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 l-col">
+					<div class="triple-grid__item l-col">
 						<img src="img/whatis/photo1.jpg" alt="photo" class="triple-img">
 					</div>
-					<div class="col-md-4 m-col">
+					<div class="triple-grid__item m-col">
 						<p class="sep sep--pad">***</p>
 						<p>Малыш начинает слышать звуки внутри живота уже с 20й недели беременности. </p>
 						<p>Поэтому звук бола запомнится ему, и в дальнейшем малышу легче успокоиться под <strong>знакомые
 								нотки</strong>.</p>
 					</div>
-					<div class="col-md-4 r-col">
+					<div class="triple-grid__item r-col">
 						<img src="img/whatis/photo3.jpg" alt="photo" class="triple-img">
 					</div>
-				</div>
 			</div>
 		</section>
 
@@ -317,13 +331,13 @@
 				</div>
 			</div>
 		</section>
+
 		<div class="divider"></div>
 
 		<section class="new section">
 			<div class="container">
 				<div class="section__header">
 					<h2 class="section-title">Новинки</h2>
-
 					<div class="arrows">
 						<svg class="prev n-prev">
 							<use xlink:href="#chevron-prev"></use>
@@ -440,14 +454,12 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 				<div class="btn-wrapper">
 					<a href="#" target="_blank" class="btn btn--solid">
 						Перейти в магазин
 					</a>
 				</div>
-
 			</div>
 		</section>
 
@@ -471,7 +483,8 @@
 								Mexicanbola даже после рождения будет у него стойко ассоциироваться с мамой, ее теплом, любовью
 								и защитой.</p>
 							<p>Таким образом кулон, повешенный над кроваткой новорожденного, <strong>обеспечит ему спокойный
-									сон, и поможет обрести гармонию и чувство защищенности</strong>.</p>
+									сон, и поможет обрести гармонию и чувство защищенности</strong>.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -481,11 +494,11 @@
 		<div class="social-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5">
+					<div class="col-lg-4 col-xl-5">
 						<p class="social-block__title">Остались вопросы? <br>
 							Задайте их нам в мессенджере:</p>
 					</div>
-					<div class="col-md-7">
+					<div class="col-lg-8 col-xl-7">
 						<div class="social-block__btns">
 							<a href="#" target="_blank" class="btn btn--inverse">
 								<svg class="social-block__icon">
@@ -511,31 +524,29 @@
 				<div class="section__descr">Любое из украшений нашего магазина вы можете <br> заказать вместе
 					с восхитительной подарочной упаковкой
 				</div>
-				<div class="row">
-					<div class="col-md-4 l-col">
+				<div class="triple-grid">
+					<div class="triple-grid__item l-col">
 						<p class="sep">***</p>
 						<p>Mexicanbola станет отличным подарком для будущей мамы, или просто девушки, желающей забеременеть —
 							в число свойств талисмана включают и способность <strong>помогать зачатию</strong>. </p>
 					</div>
-					<div class="col-md-4 m-col">
+					<div class="triple-grid__item m-col">
 						<img src="img/gift/gift1.jpg" alt="photo" class="triple-img">
 					</div>
-					<div class="col-md-4 r-col">
+					<div class="triple-grid__item r-col">
 						<p class="sep">***</p>
 						<p>А если приобрести мексиканский кулон в <strong>подарок невесте</strong>, это станет намеком на то,
 							что вы не только очень любите ее, но и хотите детишек. </p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 l-col">
+					<div class="triple-grid__item l-col">
 						<img src="img/gift/gift2.jpg" alt="photo" class="triple-img">
 					</div>
-					<div class="col-md-4 m-col">
+					<div class="triple-grid__item m-col">
 						<p class="sep sep--pad">***</p>
 						<p>Такой уникальный подарок поможет <strong>поднять настроение</strong> любимой женщине, или
 							порадовать уходящую в декрет коллегу. </p>
 					</div>
-					<div class="col-md-4 r-col">
+					<div class="triple-grid__item r-col">
 						<img src="img/gift/gift3.jpg" alt="photo" class="triple-img">
 					</div>
 				</div>
@@ -582,14 +593,13 @@
 								alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Белая подарочная упаковка</a></h3>
 					</div>
-
 				</div>
+
 				<div class="btn-wrapper">
 					<a href="#" target="_blank" class="btn btn--solid">
 						Перейти в каталог
 					</a>
 				</div>
-
 			</div>
 		</section>
 
@@ -598,7 +608,7 @@
 				<h2 class="section-title section-title--centered section-title--lone">Бола месяца</h2>
 				<div class="row">
 					<div class="col-md-5 offset-md-1">
-						<img src="img/bola/bola.jpg" alt="bola">
+						<img src="img/bola/bola.jpg" alt="bola" class="bola__img">
 					</div>
 					<div class="col-md-5">
 						<h3 class="min-title">Серебряный с «бриллиантовыми» ножками </h3>
@@ -606,7 +616,8 @@
 							ангелов для защиты мамы и малыша.</p>
 						<p>Считается, что если начать носить Мексиканский бола еще во время беременности на уровне живота,
 							он поможет будущей маме справиться с невзгодами, усталостью, даст уверенность в собственных силах,
-							<strong>понизит уровень тревожности и оградит ее дитя от негатива и несчастий</strong>.</p>
+							<strong>понизит уровень тревожности и оградит ее дитя от негатива и несчастий</strong>.
+						</p>
 						<a href="#" class="btn btn--solid">
 							Перейти в каталог
 						</a>
@@ -665,20 +676,18 @@
 						</div>
 						<span class="sign">Светлана Сергеенко</span>
 					</div>
-
 				</div>
-
 			</div>
 		</section>
 
 		<div class="social-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5">
+					<div class="col-lg-4 col-xl-5">
 						<p class="social-block__title">Остались вопросы? <br>
 							Задайте их нам в мессенджере:</p>
 					</div>
-					<div class="col-md-7">
+					<div class="col-lg-8 col-xl-7">
 						<div class="social-block__btns">
 							<a href="#" target="_blank" class="btn btn--inverse">
 								<svg class="social-block__icon">
@@ -702,25 +711,24 @@
 			<div class="container">
 				<div class="footer__wrapper">
 					<a class="footer__logo logo" href="index.html">
-						<img src="img/logo/logo.svg" alt="logo">
+						<img src="img/logo.svg" alt="logo">
 					</a>
-					<nav class="footer__nav nav">
-
+					<nav>
 						<ul class="footer__menu menu">
 							<li>
-								<a href="index.html" class="footer__menu-item">Главная</a>
+								<a href="index.html">Главная</a>
 							</li>
 							<li>
-								<a href="#" class="menu-item footer__menu-item">Каталог</a>
+								<a href="#">Каталог</a>
 							</li>
 							<li>
-								<a href="#" class="menu-item footer__menu-item">Магазин</a>
+								<a href="#">Магазин</a>
 							</li>
 							<li>
-								<a href="#" class="menu-item footer__menu-item">FAQ</a>
+								<a href="#">FAQ</a>
 							</li>
 							<li>
-								<a href="#" class="menu-item footer__menu-item">Контакты</a>
+								<a href="#">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -751,7 +759,6 @@
 				<use xlink:href="#chevron-prev"></use>
 			</svg>
 		</div>
-
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
