@@ -29,6 +29,7 @@
 		margin-bottom: 25px;
 	}
 	.card {
+		height: 430px;
 		&__title {
 			margin-bottom: 10px;
 		}
@@ -136,6 +137,9 @@
 	.sslider {
 		margin-bottom: 12px;
 	}
+	.card {
+		height: 460px;
+	}
 
 }
 
@@ -156,5 +160,8 @@
 		& .r-col, & .l-col {
 			align-items: center;
 		}
+	}
+	.card {
+		height: 430px;
 	}
 }

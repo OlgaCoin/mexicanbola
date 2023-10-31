@@ -47,14 +47,14 @@ $(document).ready(function () {
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 2
+					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 576,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 2
+					slidesToScroll: 1
 				}
 			},
 			{
@@ -74,6 +74,36 @@ $(document).ready(function () {
 		// autoplay: true,
 		prevArrow: $('.n-prev'),
 		nextArrow: $('.n-next'),
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 
 	$('.package__slider').slick({
@@ -83,6 +113,36 @@ $(document).ready(function () {
 		// autoplay: true,
 		prevArrow: $('.p-prev'),
 		nextArrow: $('.p-next'),
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 
 	$('.feedback__slider').slick({
@@ -92,6 +152,36 @@ $(document).ready(function () {
 		// autoplay: true,
 		prevArrow: $('.f-prev'),
 		nextArrow: $('.f-next'),
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 
 	// $('.sslider').slick({
