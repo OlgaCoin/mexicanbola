@@ -5,6 +5,7 @@
 		min-height: 600px;
 		background: url('../img/promo.png') bottom right no-repeat;
 		position: relative;
+		overflow: hidden;
 		&:after {
 			position: absolute;
 			content: '';

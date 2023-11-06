@@ -1,12 +1,14 @@
 .card {
 	border-radius: $radius_sm;
 	padding: 15px 15px 24px;
-	transition: all .3s;
-	height: 480px;
+	transition: all .2s;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	position: relative;
+	&--lg {
+		height: 480px;
+	}
 	&--sm {
 		height: auto;
 		padding-bottom: 5px;
@@ -78,7 +80,13 @@
 		height: 39px;
 		cursor: pointer;
 		transition: $trans;
-		&:hover, &--filled {
+		border: 1px solid transparent;
+		&:hover {
+			& .card__cart__icon {
+				fill: $primary_dark;
+			}
+		}
+		&--filled, &--filled:hover {
 			background-color: $primary;
 			& .card__cart__icon {
 				fill: $white;

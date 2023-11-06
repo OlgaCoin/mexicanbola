@@ -63,7 +63,7 @@
 	&__icon {
 		width: 26px;
 		height: 26px;
-		transition: all .3s;
+		transition: all .2s;
 		fill: $t_gray;
 		&:hover {
 			fill: $primary_dark;
@@ -74,11 +74,10 @@
 	&__wrapper {
 		position: relative;
 		display: block;
-		& img {
+		& svg{
 			width: 26px;
 			height: 26px;
 			transition: $trans;
-			overflow: visible;
 			&:hover {
 				transform: scale(1.1);
 			}

@@ -49,6 +49,17 @@
 			<path
 				d="M22.1943 18.5683L17.7906 14.5643C17.3583 14.1711 16.691 14.1917 16.2836 14.6109L13.6912 17.277C13.0672 17.1578 11.8127 16.7668 10.5214 15.4787C9.23006 14.1863 8.83898 12.9285 8.72306 12.3088L11.387 9.71534C11.8073 9.30801 11.8268 8.64176 11.4336 8.20843L7.43065 3.80576C7.0374 3.37134 6.36898 3.33018 5.92373 3.71151L3.57289 5.72759C3.38548 5.91609 3.27389 6.16526 3.25873 6.43068C3.24248 6.70151 2.93264 13.117 7.90731 18.0938C12.2471 22.4326 17.6833 22.75 19.1805 22.75C19.3993 22.75 19.5336 22.7435 19.5694 22.7413C19.8348 22.7262 20.084 22.6146 20.2714 22.4261L22.2864 20.0742C22.6699 19.6289 22.6276 18.9616 22.1943 18.5683Z" />
 		</symbol>
+		<symbol id="cart-main" width="26" height="26" viewBox="0 0 26 26">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M5.31836 21.7501C5.31836 20.5535 6.28841 19.5834 7.48503 19.5834C8.68164 19.5834 9.65169 20.5535 9.65169 21.7501C9.65169 22.9467 8.68164 23.9168 7.48503 23.9168C6.28841 23.9168 5.31836 22.9467 5.31836 21.7501Z"
+				fill="#5C543E" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M17.2349 21.7501C17.2349 20.5535 18.2049 19.5834 19.4015 19.5834C20.5981 19.5834 21.5682 20.5535 21.5682 21.7501C21.5682 22.9467 20.5981 23.9168 19.4015 23.9168C18.2049 23.9168 17.2349 22.9467 17.2349 21.7501Z"
+				fill="#5C543E" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M-0.0444336 1.22072C-0.0444336 0.622415 0.440591 0.13739 1.0389 0.13739H3.20557C3.71644 0.13739 4.15789 0.494301 4.26488 0.99385L5.24154 5.55406H22.7489C23.0775 5.55406 23.3883 5.70318 23.5939 5.95946C23.7995 6.21574 23.8777 6.55149 23.8065 6.87225L22.0194 14.9195C22.0193 14.9198 22.0195 14.9192 22.0194 14.9195C21.8602 15.6415 21.4595 16.2885 20.8836 16.7522C20.3074 17.2161 19.5903 17.4695 18.8506 17.4707H8.26476C7.51361 17.4844 6.78076 17.2374 6.19103 16.7715C5.59784 16.3029 5.18656 15.6421 5.028 14.903L3.31685 6.9133C3.30855 6.88171 3.30165 6.84955 3.2962 6.81691L2.32968 2.30406H1.0389C0.440591 2.30406 -0.0444336 1.81903 -0.0444336 1.22072ZM5.70558 7.72072L7.14647 14.4485C7.14649 14.4486 7.14644 14.4484 7.14647 14.4485C7.19938 14.6947 7.33651 14.9152 7.53414 15.0713C7.73187 15.2275 7.97787 15.3099 8.2298 15.3043L8.2539 15.3041L18.8472 15.3041C18.8473 15.3041 18.847 15.3041 18.8472 15.3041C19.0935 15.3035 19.3329 15.2191 19.5248 15.0646C19.7168 14.9099 19.8504 14.6944 19.9034 14.4536L21.3986 7.72072H5.70558Z"
+				fill="#5C543E" />
+		</symbol>
 		<symbol id="chevron-prev" width="32" height="32" viewBox="0 0 32 32">
 			<path d="M10 16L20 6L21.4 7.4L12.8 16L21.4 24.6L20 26L10 16Z" />
 		</symbol>
@@ -119,7 +130,9 @@
 					</div>
 					<div class="cart">
 						<a href="#" class="cart__wrapper" title="Перейти в корзину">
-							<img src="icons/cart.svg" alt="cart">
+							<svg>
+								<use xlink:href="#cart-main"></use>
+							</svg>
 							<div class="cart__num" id="cart_num">0</div>
 						</a>
 					</div>
@@ -155,7 +168,7 @@
 				</div>
 				<div class="sslider hit__slider">
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--hit">Хит</div>
 						<a href="#" class="card__img"><img src="img/cards/hit1.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
@@ -177,7 +190,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--hit">Хит</div>
 						<a href="#" class="card__img"><img src="img/cards/hit2.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Золотое сердце</a></h3>
@@ -198,7 +211,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--hit">Хит</div>
 						<a href="#" class="card__img"><img src="img/cards/hit3.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
@@ -220,7 +233,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--hit">Хит</div>
 						<a href="#" class="card__img"><img src="img/cards/hit4.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Жемчужный «Океан» с гелиотисом</a></h3>
@@ -241,7 +254,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--hit">Хит</div>
 						<a href="#" class="card__img"><img src="img/cards/hit5.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
@@ -306,7 +319,7 @@
 					<div class="triple-grid__item r-col">
 						<img src="img/whatis/photo3.jpg" alt="photo" class="triple-img">
 					</div>
-			</div>
+				</div>
 		</section>
 
 		<section class="miracle section">
@@ -316,7 +329,7 @@
 					<br>малышом, и те, кто еще только планирует беременность.
 				</div>
 				<div class="row">
-					<div class="col-md-5 offset-md-1">
+					<div class="col-xl-5 offset-xl-1 col-md-6">
 						<p>Связь между ребенком и матерью — таинственная, загадочная и гармоничная. Всем известно, что дети,
 							даже еще не родившись, чувствуют все и очень чутко на все реагируют. Порой, если маме грустно,
 							ребенок реагирует в животе, выражая движениями свою любовь и поднимая настроение мамы.</p>
@@ -325,7 +338,7 @@
 						<p>Незаменимым помощником в этом деле станет <strong>кулон Mexicanbola – «призывающий
 								ангелов»</strong>. </p>
 					</div>
-					<div class="col-md-5">
+					<div class="col-xl-5 col-md-6">
 						<img src="img/miracle/child.jpg" alt="child">
 					</div>
 				</div>
@@ -348,7 +361,7 @@
 					</div>
 				</div>
 				<div class="sslider new__slider">
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--new">Новинка</div>
 						<a href="#" class="card__img"><img src="img/cards/new1.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
@@ -370,7 +383,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--new">Новинка</div>
 						<a href="#" class="card__img"><img src="img/cards/new2.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
@@ -391,7 +404,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--new">Новинка</div>
 						<a href="#" class="card__img"><img src="img/cards/new3.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Золотое сердце</a></h3>
@@ -412,7 +425,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--new">Новинка</div>
 						<a href="#" class="card__img"><img src="img/cards/new4.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
@@ -433,7 +446,7 @@
 						</div>
 					</div>
 
-					<div class="sslider__item card">
+					<div class="sslider__item card card--lg">
 						<div class="label label--new">Новинка</div>
 						<a href="#" class="card__img"><img src="img/cards/new2.jpg" alt="slide"></a>
 						<h3 class="card__title min-title"><a href="#">Жемчужный "Океан"
@@ -466,10 +479,10 @@
 		<section class="peace section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-xl-6 col-lg-6 col-md-12 order-lg-1 order-md-2 order-sm-2 order-2">
 						<img src="img/peace/girl.png" alt="girl" class="peace__img">
 					</div>
-					<div class="col-md-6">
+					<div class="col-xl-6 col-lg-6 col-md-12 order-lg-2 order-md-1 order-sm-1 order-1">
 						<div class="peace__content">
 							<h2 class="section-title">Дарит покой и прогоняет невзгоды</h2>
 							<p>По легенде эти маленькие колокольчики ограждают от неудач и привлекают своим мелодичным звоном
@@ -607,10 +620,10 @@
 			<div class="container">
 				<h2 class="section-title section-title--centered section-title--lone">Бола месяца</h2>
 				<div class="row">
-					<div class="col-md-5 offset-md-1">
+					<div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 col-sm-12">
 						<img src="img/bola/bola.jpg" alt="bola" class="bola__img">
 					</div>
-					<div class="col-md-5">
+					<div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
 						<h3 class="min-title">Серебряный с «бриллиантовыми» ножками </h3>
 						<p>По легенде эти маленькие колокольчики ограждают от неудач и привлекают своим мелодичным звоном
 							ангелов для защиты мамы и малыша.</p>
@@ -618,9 +631,11 @@
 							он поможет будущей маме справиться с невзгодами, усталостью, даст уверенность в собственных силах,
 							<strong>понизит уровень тревожности и оградит ее дитя от негатива и несчастий</strong>.
 						</p>
-						<a href="#" class="btn btn--solid">
-							Перейти в каталог
-						</a>
+						<div class="btn-wrapper--mob">
+							<a href="#" class="btn btn--solid">
+								Перейти в каталог
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -683,11 +698,11 @@
 		<div class="social-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-xl-5">
+					<div class="col-md-12 col-lg-4 col-xl-5">
 						<p class="social-block__title">Остались вопросы? <br>
 							Задайте их нам в мессенджере:</p>
 					</div>
-					<div class="col-lg-8 col-xl-7">
+					<div class="col-md-12 col-lg-8 col-xl-7">
 						<div class="social-block__btns">
 							<a href="#" target="_blank" class="btn btn--inverse">
 								<svg class="social-block__icon">

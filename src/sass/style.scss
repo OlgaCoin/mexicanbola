@@ -6,10 +6,10 @@
 /* Default styles */
 
 html {
-	overflow:auto;	
+	overflow-y:auto;	
 }
 body {
-	overflow:visible;
+	overflow-y:visible;
 	height: 100%;
 	margin: 0;
 	background-color: $white;
@@ -21,7 +21,7 @@ body {
 }
 html, body {
 	max-width: 100%;
-	// overflow-x:hidden;
+	overflow-x: clip;
 }
 *,
 *:before,
@@ -51,6 +51,7 @@ p {
 }
 img {
 	border-radius: $radius_sm;
+	max-width: 100%;
 }
 .container {
 	max-width: 1140px;
