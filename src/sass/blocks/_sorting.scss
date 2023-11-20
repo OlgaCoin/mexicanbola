@@ -1,0 +1,28 @@
+.filter {
+	display: flex;
+	align-items: center;
+	&__label {
+		color: $t_caption;
+		font-size: 14px;
+		line-height: 1;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+	&__form {
+		border: none;
+		outline: none;
+		width: 157px;
+		color: $t_gray;
+		font-size: 16px;
+		font-weight: 500;
+		padding-right: 6px;		
+		background-color: $white;
+		& option {
+			font-weight: 500;	
+			width: auto;	
+		}
+	}
+}
+#width_tmp_select{
+	display : none;
+} 

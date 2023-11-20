@@ -34,6 +34,18 @@
 			outline: none;
 		}
 	}
+	&--stroke {
+		border: 1px solid $outline;
+		color: $t_gray;
+		transition: $trans;
+		&:hover, &:focus {
+			color: $primary_dark;
+			border: 1px solid $primary_dark;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
 	&--inverse {
 		padding: 13px 28px;
 		border: 2px solid $t_light;
@@ -69,5 +81,10 @@
 	}
 	&--new {
 		background: $green;
+	}
+	&--sale {
+		background: $red;
+		font-size: 13px;
+		padding: 2px 7px;
 	}
 }

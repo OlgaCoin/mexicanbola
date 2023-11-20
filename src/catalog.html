@@ -140,20 +140,213 @@
 			</div>
 		</header>
 
-		<div class="promo">
+		<div class="catalog">
 			<div class="container">
-				<div class="promo__wrapper">
-					<h1 class="main-title">Украшения ручной работы <br>для беременных <br>и кормящих мам</h1>
-					<div class="promo__descr">Мексиканский Бола — оберег, талисман <br>и прекрасное украшение для будущих мам
+				<div class="page__header">
+					<div class="page__header--left">
+						<h2 class="page-title">Каталог</h2>
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item"><a href="/">Главная</a></li>
+							<li class="breadcrumbs__item"><a href="#" class="current">Каталог</a></li>
+						</ul>
 					</div>
-					<a href="catalog.html" class="btn btn--solid">
-						Перейти в каталог
+					<div class="page__header--right">
+						<div class="filter">
+							<label for="sort" class="filter__label">Сортировка:</label>
+							<select id="sort" name="sort" class="filter__form">
+								<option value="rating_desc" selected>по популярности</option>
+								<option value="price_asc">по возрастанию цены</option>
+								<option value="price_desc">по убыванию цены</option>
+							</select>
+							<select id="width_tmp_select">
+								<option value="" id="width_tmp_option">&nbsp;</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+				<div class="catalog__grid">
+
+					<div class="catalog__item card card--lg">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit1.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart card__cart--filled" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__item card card--lg">
+						<a href="#" class="card__img"><img src="img/cards/hit2.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Золотое сердце</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">2500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__item card card--lg">
+						<div class="label label--sale">-20%</div>
+						<a href="#" class="card__img"><img src="img/cards/hit3.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">3500 ₽</span>
+								<span class="card__price--gray">8500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__item card card--lg">
+						<a href="#" class="card__img"><img src="img/cards/hit4.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Жемчужный «Океан» с гелиотисом</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Мексика <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">1500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__item card card--lg">
+						<a href="#" class="card__img"><img src="img/cards/hit5.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__item card card--lg">
+						<div class="label label--new">Новинка</div>
+						<a href="#" class="card__img"><img src="img/cards/hit1.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__item card card--lg">
+						<a href="#" class="card__img"><img src="img/cards/hit2.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Золотое сердце</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">2500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__item card card--lg">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit3.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">3500 ₽</span>
+								<span class="card__price--gray">8500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="btn-wrapper">
+					<a href="#" target="_blank" class="btn btn--stroke">
+						Показать еще
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<section class="hits section">
+		<section class="hits section section--page">
 			<div class="container">
 				<div class="section__header">
 					<h2 class="section-title">Хиты продаж</h2>
@@ -277,78 +470,10 @@
 					</div>
 
 				</div>
-
-				<div class="btn-wrapper">
-					<a href="catalog.html" target="_blank" class="btn btn--solid">
-						Перейти в магазин
-					</a>
-				</div>
 			</div>
 		</section>
 
-		<section class="whatis section section--triple">
-			<div class="container">
-				<h2 class="section-title section-title--centered section-title--lone">Что такое Мексиканский Бола?</h2>
-
-				<div class="triple-grid">
-					<div class="triple-grid__item l-col">
-						<p class="sep">***</p>
-						<p>Mexicanbola — это кулончик, который сделан специально для беременных и кормящих мам.</p>
-						<p>Внутри кулона спрятан <strong>ксилофончик</strong>, который издает звуки при ходьбе.
-						</p>
-					</div>
-					<div class="triple-grid__item m-col">
-						<img src="img/whatis/photo2.jpg" alt="photo" class="triple-img">
-					</div>
-					<div class="triple-grid__item r-col">
-						<p class="sep">***</p>
-						<p>Для будущей мамы важнее всего — здоровье и спокойствие. Поэтому на некоторых кулонах нанесены
-							<strong>специальные символы</strong>, укрепляющие здоровье, снижающие тревожность, стресс
-							и оберегающие будущую маму.
-						</p>
-					</div>
-					<div class="triple-grid__item l-col">
-						<img src="img/whatis/photo1.jpg" alt="photo" class="triple-img">
-					</div>
-					<div class="triple-grid__item m-col">
-						<p class="sep sep--pad">***</p>
-						<p>Малыш начинает слышать звуки внутри живота уже с 20й недели беременности. </p>
-						<p>Поэтому звук бола запомнится ему, и в дальнейшем малышу легче успокоиться под <strong>знакомые
-								нотки</strong>.</p>
-					</div>
-					<div class="triple-grid__item r-col">
-						<img src="img/whatis/photo3.jpg" alt="photo" class="triple-img">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="miracle section">
-			<div class="container">
-				<h2 class="section-title section-title--centered">В ожидании маленького чуда!</h2>
-				<div class="section__descr">Ожидание ребенка — это всегда чудо. Это знают и те, кто уже обзавелся
-					<br>малышом, и те, кто еще только планирует беременность.
-				</div>
-				<div class="row">
-					<div class="col-xl-5 offset-xl-1 col-md-6">
-						<p>Связь между ребенком и матерью — таинственная, загадочная и гармоничная. Всем известно, что дети,
-							даже еще не родившись, чувствуют все и очень чутко на все реагируют. Порой, если маме грустно,
-							ребенок реагирует в животе, выражая движениями свою любовь и поднимая настроение мамы.</p>
-						<p>И, разумеется, каждая мама хочет позаботиться о своем ребенке, окружить его любовью, теплом
-							и создать особую атмосферу счастья и спокойствия.</p>
-						<p>Незаменимым помощником в этом деле станет <strong>кулон Mexicanbola – «призывающий
-								ангелов»</strong>. </p>
-					</div>
-					<div class="col-xl-5 col-md-6">
-						<img src="img/miracle/child.jpg" alt="child">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="divider"></div>
-
-		<section class="new section">
+		<section class="new section section--page">
 			<div class="container">
 				<div class="section__header">
 					<h2 class="section-title">Новинки</h2>
@@ -469,105 +594,134 @@
 						</div>
 					</div>
 				</div>
-				<div class="btn-wrapper">
-					<a href="catalog.html" target="_blank" class="btn btn--solid">
-						Перейти в магазин
-					</a>
-				</div>
 			</div>
 		</section>
 
-		<section class="peace section">
+		<section class="sale section section--page">
 			<div class="container">
-				<div class="row">
-					<div class="col-xl-6 col-lg-6 col-md-12 order-lg-1 order-md-2 order-sm-2 order-2">
-						<img src="img/peace/girl.png" alt="girl" class="peace__img">
+				<div class="section__header">
+					<h2 class="section-title">Акционные товары</h2>
+					<div class="arrows">
+						<svg class="prev s-prev">
+							<use xlink:href="#chevron-prev"></use>
+						</svg>
+						<svg class="next s-next">
+							<use xlink:href="#chevron-prev"></use>
+						</svg>
 					</div>
-					<div class="col-xl-6 col-lg-6 col-md-12 order-lg-2 order-md-1 order-sm-1 order-1">
-						<div class="peace__content">
-							<h2 class="section-title">Дарит покой и прогоняет невзгоды</h2>
-							<p>По легенде эти маленькие колокольчики ограждают от неудач и привлекают своим мелодичным звоном
-								ангелов для защиты мамы и малыша.</p>
-							<p>Считается, что если начать носить Мексиканский бола еще во время беременности на уровне живота,
-								он поможет будущей маме справиться с невзгодами, усталостью, даст уверенность в собственных
-								силах,<strong>понизит уровень тревожности и оградит ее дитя от негатива и несчастий</strong>,
-								а после рождения ребенка ему следует подарить его собственный кулон, чтобы малыш всегда был
-								защищен.</p>
-							<p>Начиная с двадцатой недели беременности, ребенок может слышать звуки внешнего мира, и звук
-								Mexicanbola даже после рождения будет у него стойко ассоциироваться с мамой, ее теплом, любовью
-								и защитой.</p>
-							<p>Таким образом кулон, повешенный над кроваткой новорожденного, <strong>обеспечит ему спокойный
-									сон, и поможет обрести гармонию и чувство защищенности</strong>.
-							</p>
+				</div>
+				<div class="sslider sale__slider">
+					<div class="sslider__item card card--lg">
+						<div class="label label--sale">-20%</div>
+						<a href="#" class="card__img"><img src="img/cards/new1.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<div class="label label--sale">-30%</div>
+						<a href="#" class="card__img"><img src="img/cards/new2.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">3500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<div class="label label--sale">-25%</div>
+						<a href="#" class="card__img"><img src="img/cards/new3.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Золотое сердце</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">2500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<div class="label label--sale">-35%</div>
+						<a href="#" class="card__img"><img src="img/cards/new4.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">3500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<div class="label label--sale">-20%</div>
+						<a href="#" class="card__img"><img src="img/cards/new2.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Жемчужный "Океан"
+								с гелиотисом</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Мексика <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">1500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<div class="social-block">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-5">
-						<p class="social-block__title">Остались вопросы? <br>
-							Задайте их нам в мессенджере:</p>
-					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-7">
-						<div class="social-block__btns">
-							<a href="#" target="_blank" class="btn btn--inverse">
-								<svg class="social-block__icon">
-									<use xlink:href="#tg-icon-l"></use>
-								</svg>
-								Напиcать в Telegram
-							</a>
-							<a href="#" target="_blank" class="btn btn--inverse">
-								<svg class="social-block__icon">
-									<use xlink:href="#wa-icon-l"></use>
-								</svg>
-								Написать в Whatsapp
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<section class="gift section section--triple">
-			<div class="container">
-				<h2 class="section-title section-title--centered section-title--lone">Замечательный подарок</h2>
-				<div class="section__descr">Любое из украшений нашего магазина вы можете <br> заказать вместе
-					с восхитительной подарочной упаковкой
-				</div>
-				<div class="triple-grid">
-					<div class="triple-grid__item l-col">
-						<p class="sep">***</p>
-						<p>Mexicanbola станет отличным подарком для будущей мамы, или просто девушки, желающей забеременеть —
-							в число свойств талисмана включают и способность <strong>помогать зачатию</strong>. </p>
-					</div>
-					<div class="triple-grid__item m-col">
-						<img src="img/gift/gift1.jpg" alt="photo" class="triple-img">
-					</div>
-					<div class="triple-grid__item r-col">
-						<p class="sep">***</p>
-						<p>А если приобрести мексиканский кулон в <strong>подарок невесте</strong>, это станет намеком на то,
-							что вы не только очень любите ее, но и хотите детишек. </p>
-					</div>
-					<div class="triple-grid__item l-col">
-						<img src="img/gift/gift2.jpg" alt="photo" class="triple-img">
-					</div>
-					<div class="triple-grid__item m-col">
-						<p class="sep sep--pad">***</p>
-						<p>Такой уникальный подарок поможет <strong>поднять настроение</strong> любимой женщине, или
-							порадовать уходящую в декрет коллегу. </p>
-					</div>
-					<div class="triple-grid__item r-col">
-						<img src="img/gift/gift3.jpg" alt="photo" class="triple-img">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="package section">
+		<section class="package section section--page">
 			<div class="container">
 				<div class="section__header">
 					<h2 class="section-title">Подарочные упаковки</h2>
@@ -608,37 +762,6 @@
 						<h3 class="card__title min-title"><a href="#">Белая подарочная упаковка</a></h3>
 					</div>
 				</div>
-
-				<div class="btn-wrapper">
-					<a href="catalog.html" target="_blank" class="btn btn--solid">
-						Перейти в каталог
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="bola section">
-			<div class="container">
-				<h2 class="section-title section-title--centered section-title--lone">Бола месяца</h2>
-				<div class="row">
-					<div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 col-sm-12">
-						<img src="img/bola/bola.jpg" alt="bola" class="bola__img">
-					</div>
-					<div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
-						<h3 class="min-title">Серебряный с «бриллиантовыми» ножками </h3>
-						<p>По легенде эти маленькие колокольчики ограждают от неудач и привлекают своим мелодичным звоном
-							ангелов для защиты мамы и малыша.</p>
-						<p>Считается, что если начать носить Мексиканский бола еще во время беременности на уровне живота,
-							он поможет будущей маме справиться с невзгодами, усталостью, даст уверенность в собственных силах,
-							<strong>понизит уровень тревожности и оградит ее дитя от негатива и несчастий</strong>.
-						</p>
-						<div class="btn-wrapper--mob">
-							<a href="catalog.html" class="btn btn--solid">
-								Перейти в каталог
-							</a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section>
 
@@ -660,7 +783,9 @@
 
 					<div class="sslider__item">
 						<div class="bubble">
-							<p>На шее носится не тяжело, при ходьбе содержащиеся внутри шарика элементы издают легкий звон, как
+							<p>На шее носится не тяжело, при ходьбе содержащиеся внутри шарика элементы издают легкий
+								звон,
+								как
 								у колокольчика)
 								Когда надеваю его, муж шутя называет меня: «Моя коровка с колокольчиком!»</p>
 						</div>

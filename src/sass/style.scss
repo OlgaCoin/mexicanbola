@@ -57,6 +57,34 @@ img {
 	max-width: 1140px;
 	position: relative;
 }
+.page {
+	&__header {
+		margin: 45px 0;	
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+}
+.breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+	&__item {
+		&:not(:last-child)::after {
+			margin: 0 6px;
+			content: "/";
+		}
+		& a {
+			color: $t_gray;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 20px; 
+			transition: $trans;
+			&:hover {
+				color: $primary_dark;
+			}
+		}
+	}
+}
 
 
 /* Blocks */
@@ -72,6 +100,8 @@ img {
 @import "blocks/footer";
 @import "blocks/nav-mob";
 @import "blocks/triple-grid";
+@import "blocks/catalog";
+@import "blocks/sorting";
 
 @import "blocks/media";
 

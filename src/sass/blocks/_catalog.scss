@@ -1,0 +1,12 @@
+.catalog {
+	padding-bottom: 42px;
+	&__grid {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+	&__item {
+		flex-basis: 25%;
+		margin-bottom: 65px;
+	}
+}
