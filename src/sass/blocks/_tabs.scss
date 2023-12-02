@@ -1,0 +1,76 @@
+.tabs-block {
+	& > span {
+		font-weight: 600;
+		margin-bottom: 26px;
+		display: block;
+	}
+}
+.tabs {
+	margin-bottom: 20px;
+	&__wrapper {
+		display: flex;
+		gap: 17px;
+		flex-wrap: wrap;
+	}
+	&__item {
+		height: 95px;
+		width: 95px;
+		display: block;
+		cursor: pointer;
+		border-radius: 4px;
+		overflow: hidden;
+		outline: solid 4px transparent;
+		outline-offset: -4px;
+		transition: outline .2s linear;
+		& > img {
+			border-radius: 4px;
+			object-fit: cover;
+			min-height: 100%;
+			width: 100%;
+		}
+	}
+	&-content {
+		&__item {
+			font-weight: 500;
+			display: none;
+			opacity: 0;
+			&.show {
+				display: block !important;
+				opacity: 1 !important;
+			}
+		}
+		&__video {
+			margin-top: 8px;
+			display: flex;
+			align-items: center;
+			& > a {
+				font-size: 14px;
+				font-weight: 500;
+				transition: $trans;
+				color: $t_caption;
+				line-height: 18px;
+				border-bottom: 1px dashed $t_caption;
+				&:hover {
+					color: $primary_dark;
+					border-bottom: 1px dashed $primary_dark;
+				}
+			}
+			& > img {
+				margin-right: 8px;
+				height: 24px;
+				width: 24px;
+			}
+		}
+	}
+}
+.tab--border {
+	outline: solid 4px $primary;
+	outline-offset: -4px;
+	border-radius: 4px;
+}
+
+
+
+
+
+

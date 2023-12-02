@@ -12,6 +12,7 @@ body {
 	overflow-y:visible;
 	height: 100%;
 	margin: 0;
+	padding-right: 0!important;
 	background-color: $white;
 	color: $t_gray;
 	font-weight: 400;
@@ -102,6 +103,10 @@ img {
 @import "blocks/triple-grid";
 @import "blocks/catalog";
 @import "blocks/sorting";
+@import "blocks/order";
+@import "blocks/count";
+@import "blocks/tabs";
+@import "blocks/popup";
 
 @import "blocks/media";
 

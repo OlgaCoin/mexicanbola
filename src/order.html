@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MEXICANBOLA | Украшения ручной работы
+		для беременных и кормящих мам</title>
+	<meta name="keywords" content="">
+	<meta name="description"
+		content="Ожидание ребенка – это всегда чудо, это знают и те, кто уже обзавелся малышом, и те, кто еще только планирует беременность. Связь между ребенком и матерью – таинственная, загадочная и гармоничная.">
+
+	<!-- Favicon  -->
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+	<link rel="manifest" href="icons/favicon/site.webmanifest">
+	<link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="icons/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="icons/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/hystmodal.min.css">
+	<!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<!-- svg-sprite -->
+	<svg style="display: none;">
+		<symbol id="tg-icon" width="26" height="26" viewBox="0 0 26 26">
+			<path
+				d="M21.9961 4.01966L3.57133 11.4324C2.31391 11.9593 2.32119 12.6912 3.34063 13.0175L8.07101 14.5571L19.0157 7.35252C19.5333 7.024 20.0061 7.20073 19.6174 7.56069L10.75 15.9102H10.748L10.75 15.9113L10.4237 20.9984C10.9018 20.9984 11.1127 20.7696 11.3808 20.4996L13.6785 18.1686L18.4577 21.8516C19.3389 22.358 19.9718 22.0978 20.1911 21.0005L23.3284 5.57442C23.6495 4.23108 22.8368 3.62284 21.9961 4.01966Z" />
+		</symbol>
+		<symbol id="tg-icon-l" width="39" height="39" viewBox="0 0 39 39">
+			<path
+				d="M33.5806 6.5402L4.76935 17.6503C2.8031 18.4401 2.81447 19.5369 4.4086 20.0261L11.8056 22.3336L28.9201 11.5354C29.7293 11.0431 30.4687 11.3079 29.861 11.8474L15.9948 24.3616H15.9916L15.9948 24.3632L15.4846 31.9877C16.2321 31.9877 16.562 31.6448 16.9812 31.2402L20.5741 27.7464L28.0475 33.2666C29.4255 34.0254 30.4151 33.6354 30.758 31.9909L35.6638 8.87045C36.166 6.85707 34.8952 5.94545 33.5806 6.5402Z" />
+		</symbol>
+		<symbol id="wa-icon" width="26" height="26" viewBox="0 0 26 26">
+			<path
+				d="M22.0849 12.4633C21.7756 7.18543 16.9805 3.11782 11.4575 4.0278C7.65421 4.65569 4.60611 7.74051 4.01469 11.5442C3.66893 13.7464 4.12389 15.8302 5.11566 17.5501L4.30586 20.5621C4.12388 21.2446 4.75168 21.8634 5.42499 21.6723L8.39121 20.8533C9.73784 21.645 11.3119 22.1 12.9952 22.1C18.127 22.1 22.3852 17.5774 22.0849 12.4633ZM17.4445 16.3853C17.3627 16.5491 17.2626 16.7038 17.1352 16.8494C16.9077 17.0951 16.662 17.2771 16.3891 17.3863C16.1161 17.5046 15.8159 17.5592 15.4974 17.5592C15.0334 17.5592 14.5329 17.4501 14.0143 17.2226C13.4866 16.9951 12.9679 16.6947 12.4493 16.3216C11.9216 15.9394 11.4302 15.5117 10.9571 15.0476C10.4839 14.5744 10.0654 14.074 9.68323 13.5553C9.31018 13.0366 9.00993 12.5179 8.79156 11.9992C8.57319 11.4805 8.46402 10.9801 8.46402 10.5069C8.46402 10.1975 8.51861 9.89717 8.62779 9.62418C8.73698 9.34208 8.90987 9.0873 9.15554 8.8598C9.4467 8.56861 9.76514 8.43211 10.1018 8.43211C10.2292 8.43211 10.3565 8.4594 10.4748 8.514C10.5931 8.5686 10.7023 8.6505 10.7842 8.7688L11.8397 10.2612C11.9216 10.3795 11.9853 10.4796 12.0216 10.5797C12.0671 10.6797 12.0853 10.7707 12.0853 10.8617C12.0853 10.9709 12.0489 11.0802 11.9853 11.1893C11.9216 11.2985 11.8397 11.4077 11.7305 11.5169L11.3847 11.8809C11.3301 11.9355 11.3119 11.9901 11.3119 12.0629C11.3119 12.0993 11.321 12.1357 11.3301 12.1721C11.3483 12.2085 11.3574 12.2358 11.3665 12.2631C11.4484 12.4178 11.594 12.6089 11.7942 12.8455C12.0035 13.0821 12.2218 13.3278 12.4584 13.5644C12.7041 13.8101 12.9406 14.0285 13.1863 14.2378C13.4229 14.4379 13.623 14.5744 13.7777 14.6563C13.805 14.6654 13.8323 14.6836 13.8596 14.6927C13.896 14.7109 13.9324 14.7109 13.9779 14.7109C14.0598 14.7109 14.1144 14.6836 14.169 14.629L14.5147 14.2832C14.633 14.165 14.7422 14.0831 14.8423 14.0285C14.9515 13.9648 15.0516 13.9284 15.1698 13.9284C15.2608 13.9284 15.3518 13.9466 15.4519 13.9921C15.552 14.0376 15.6612 14.0922 15.7704 14.1741L17.2808 15.2478C17.399 15.3297 17.4809 15.4298 17.5355 15.539C17.581 15.6573 17.6083 15.7665 17.6083 15.8939C17.5537 16.0486 17.5173 16.2215 17.4445 16.3853Z" />
+		</symbol>
+		<symbol id="wa-icon-l" width="39" height="39" viewBox="0 0 39 39">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M33.9168 19.0002C33.9168 27.5145 27.0146 34.4168 18.5001 34.4168C16.1451 34.4168 13.9134 33.8888 11.917 32.9445L5.2025 34.0636C4.16191 34.2371 3.25843 33.3377 3.42726 32.2963L4.52591 25.5199C3.60045 23.5398 3.0835 21.3302 3.0835 19.0002C3.0835 10.4858 9.98577 3.5835 18.5001 3.5835C27.0146 3.5835 33.9168 10.4858 33.9168 19.0002ZM24.6668 23.124V23.7964C24.6668 24.5532 24.0532 25.1668 23.2964 25.1668C17.2418 25.1668 12.3334 20.2585 12.3334 14.2039C12.3334 13.447 12.947 12.8335 13.7038 12.8335H14.3763C15.2116 12.8335 15.9628 13.3421 16.273 14.1176L16.5607 14.8369C16.8823 15.6409 16.534 16.5574 15.7593 16.9447C15.7593 16.9447 16.1019 18.6576 17.4723 20.028C18.8427 21.3984 20.5556 21.7409 20.5556 21.7409C20.9429 20.9662 21.8593 20.618 22.6634 20.9396L23.3826 21.2273C24.1582 21.5374 24.6668 22.2887 24.6668 23.124Z" />
+		</symbol>
+		<symbol id="phone-icon" width="26" height="26" viewBox="0 0 26 26">
+			<path
+				d="M22.1943 18.5683L17.7906 14.5643C17.3583 14.1711 16.691 14.1917 16.2836 14.6109L13.6912 17.277C13.0672 17.1578 11.8127 16.7668 10.5214 15.4787C9.23006 14.1863 8.83898 12.9285 8.72306 12.3088L11.387 9.71534C11.8073 9.30801 11.8268 8.64176 11.4336 8.20843L7.43065 3.80576C7.0374 3.37134 6.36898 3.33018 5.92373 3.71151L3.57289 5.72759C3.38548 5.91609 3.27389 6.16526 3.25873 6.43068C3.24248 6.70151 2.93264 13.117 7.90731 18.0938C12.2471 22.4326 17.6833 22.75 19.1805 22.75C19.3993 22.75 19.5336 22.7435 19.5694 22.7413C19.8348 22.7262 20.084 22.6146 20.2714 22.4261L22.2864 20.0742C22.6699 19.6289 22.6276 18.9616 22.1943 18.5683Z" />
+		</symbol>
+		<symbol id="cart-main" width="26" height="26" viewBox="0 0 26 26">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M5.31836 21.7501C5.31836 20.5535 6.28841 19.5834 7.48503 19.5834C8.68164 19.5834 9.65169 20.5535 9.65169 21.7501C9.65169 22.9467 8.68164 23.9168 7.48503 23.9168C6.28841 23.9168 5.31836 22.9467 5.31836 21.7501Z"
+				fill="#5C543E" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M17.2349 21.7501C17.2349 20.5535 18.2049 19.5834 19.4015 19.5834C20.5981 19.5834 21.5682 20.5535 21.5682 21.7501C21.5682 22.9467 20.5981 23.9168 19.4015 23.9168C18.2049 23.9168 17.2349 22.9467 17.2349 21.7501Z"
+				fill="#5C543E" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M-0.0444336 1.22072C-0.0444336 0.622415 0.440591 0.13739 1.0389 0.13739H3.20557C3.71644 0.13739 4.15789 0.494301 4.26488 0.99385L5.24154 5.55406H22.7489C23.0775 5.55406 23.3883 5.70318 23.5939 5.95946C23.7995 6.21574 23.8777 6.55149 23.8065 6.87225L22.0194 14.9195C22.0193 14.9198 22.0195 14.9192 22.0194 14.9195C21.8602 15.6415 21.4595 16.2885 20.8836 16.7522C20.3074 17.2161 19.5903 17.4695 18.8506 17.4707H8.26476C7.51361 17.4844 6.78076 17.2374 6.19103 16.7715C5.59784 16.3029 5.18656 15.6421 5.028 14.903L3.31685 6.9133C3.30855 6.88171 3.30165 6.84955 3.2962 6.81691L2.32968 2.30406H1.0389C0.440591 2.30406 -0.0444336 1.81903 -0.0444336 1.22072ZM5.70558 7.72072L7.14647 14.4485C7.14649 14.4486 7.14644 14.4484 7.14647 14.4485C7.19938 14.6947 7.33651 14.9152 7.53414 15.0713C7.73187 15.2275 7.97787 15.3099 8.2298 15.3043L8.2539 15.3041L18.8472 15.3041C18.8473 15.3041 18.847 15.3041 18.8472 15.3041C19.0935 15.3035 19.3329 15.2191 19.5248 15.0646C19.7168 14.9099 19.8504 14.6944 19.9034 14.4536L21.3986 7.72072H5.70558Z"
+				fill="#5C543E" />
+		</symbol>
+		<symbol id="chevron-prev" width="32" height="32" viewBox="0 0 32 32">
+			<path d="M10 16L20 6L21.4 7.4L12.8 16L21.4 24.6L20 26L10 16Z" />
+		</symbol>
+		<symbol id="basket" width="18" height="20" viewBox="0 0 18 20">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M0.730469 5C0.730469 4.57516 1.07487 4.23077 1.4997 4.23077H16.4997C16.9245 4.23077 17.2689 4.57516 17.2689 5C17.2689 5.42483 16.9245 5.76923 16.4997 5.76923H1.4997C1.07487 5.76923 0.730469 5.42483 0.730469 5Z" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M3.16667 4.23076C3.5915 4.23076 3.9359 4.57516 3.9359 4.99999V16.6667C3.9359 16.8332 4.02689 17.064 4.23143 17.2686C4.43597 17.4731 4.66684 17.5641 4.83333 17.5641H13.1667C13.3332 17.5641 13.564 17.4731 13.7686 17.2686C13.9731 17.064 14.0641 16.8332 14.0641 16.6667V4.99999C14.0641 4.57516 14.4085 4.23076 14.8333 4.23076C15.2582 4.23076 15.6026 4.57516 15.6026 4.99999V16.6667C15.6026 17.3335 15.2769 17.936 14.8564 18.3564C14.436 18.7769 13.8335 19.1026 13.1667 19.1026H4.83333C4.16649 19.1026 3.56403 18.7769 3.14357 18.3564C2.72311 17.936 2.39744 17.3335 2.39744 16.6667V4.99999C2.39744 4.57516 2.74183 4.23076 3.16667 4.23076Z" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M6.73143 2.73142C6.52689 2.93596 6.4359 3.16684 6.4359 3.33333V4.99999C6.4359 5.42483 6.0915 5.76923 5.66667 5.76923C5.24183 5.76923 4.89744 5.42483 4.89744 4.99999V3.33333C4.89744 2.66648 5.22311 2.06402 5.64357 1.64357C6.06403 1.22311 6.66649 0.89743 7.33333 0.89743H10.6667C11.3335 0.89743 11.936 1.22311 12.3564 1.64357C12.7769 2.06402 13.1026 2.66648 13.1026 3.33333V4.99999C13.1026 5.42483 12.7582 5.76923 12.3333 5.76923C11.9085 5.76923 11.5641 5.42483 11.5641 4.99999V3.33333C11.5641 3.16684 11.4731 2.93596 11.2686 2.73142C11.064 2.52688 10.8332 2.43589 10.6667 2.43589H7.33333C7.16684 2.43589 6.93597 2.52688 6.73143 2.73142Z" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M7.33368 8.39742C7.75852 8.39742 8.10291 8.74182 8.10291 9.16666V14.1667C8.10291 14.5915 7.75852 14.9359 7.33368 14.9359C6.90885 14.9359 6.56445 14.5915 6.56445 14.1667V9.16666C6.56445 8.74182 6.90885 8.39742 7.33368 8.39742Z" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M10.6667 8.39743C11.0915 8.39743 11.4359 8.74183 11.4359 9.16666V14.1667C11.4359 14.5915 11.0915 14.9359 10.6667 14.9359C10.2418 14.9359 9.89744 14.5915 9.89744 14.1667V9.16666C9.89744 8.74183 10.2418 8.39743 10.6667 8.39743Z" />
+		</symbol>
+		<symbol id="cart-icon" width="20" height="20" viewBox="0 0 20 20">
+			<g clip-path="url(#clip0_350_62)">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M4.09094 17.5001C4.09094 16.5796 4.83713 15.8334 5.75761 15.8334C6.67808 15.8334 7.42428 16.5796 7.42428 17.5001C7.42428 18.4206 6.67808 19.1668 5.75761 19.1668C4.83713 19.1668 4.09094 18.4206 4.09094 17.5001Z" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.2576 17.5001C13.2576 16.5796 14.0038 15.8334 14.9242 15.8334C15.8447 15.8334 16.5909 16.5796 16.5909 17.5001C16.5909 18.4206 15.8447 19.1668 14.9242 19.1668C14.0038 19.1668 13.2576 18.4206 13.2576 17.5001Z" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M-0.0340576 1.70827C-0.0340576 1.24803 0.339038 0.874939 0.799276 0.874939H2.46594C2.85892 0.874939 3.1985 1.14949 3.2808 1.53375L4.03208 5.04161H17.4993C17.752 5.04161 17.9911 5.15631 18.1493 5.35345C18.3074 5.55059 18.3676 5.80886 18.3128 6.0556L16.9381 12.2458C16.9381 12.246 16.9382 12.2455 16.9381 12.2458C16.8157 12.8012 16.5074 13.2989 16.0644 13.6556C15.6212 14.0124 15.0696 14.2074 14.5006 14.2083L6.35763 14.2083C5.77982 14.2188 5.21609 14.0288 4.76245 13.6704C4.30615 13.3099 3.98979 12.8016 3.86781 12.2331L2.55154 6.08718C2.54516 6.06288 2.53985 6.03814 2.53566 6.01303L1.79219 2.54161H0.799276C0.339038 2.54161 -0.0340576 2.16851 -0.0340576 1.70827ZM4.38903 6.70827L5.4974 11.8835C5.49738 11.8834 5.49742 11.8836 5.4974 11.8835C5.5381 12.0729 5.64359 12.2425 5.79562 12.3626C5.94772 12.4827 6.13695 12.5461 6.33074 12.5418L6.34928 12.5416H14.4979C14.4978 12.5416 14.4981 12.5416 14.4979 12.5416C14.6874 12.5412 14.8716 12.4762 15.0192 12.3574C15.1669 12.2384 15.2697 12.0727 15.3104 11.8874L16.4606 6.70827H4.38903Z" />
+			</g>
+		</symbol>
+	</svg>
+	<!-- /svg-sprite -->
+
+	<div class="page">
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="l-wrapper">
+						<div class="burger" title="Меню">
+							<div class="burger__row"></div>
+							<div class="burger__row"></div>
+							<div class="burger__row"></div>
+						</div>
+						<a class="header__logo logo" href="index.html">
+							<img src="img/logo.svg" alt="logo">
+						</a>
+					</div>
+					<nav class="header__nav nav">
+
+						<ul class="header__menu menu menu-mob">
+							<li class="menu-item header__menu-item">
+								<a href="index.html">Главная</a>
+							</li>
+							<li class=" menu-item header__menu-item">
+								<a href="catalog.html">Каталог</a>
+							</li>
+							<li class="menu-item header__menu-item">
+								<a href="#">Магазин</a>
+							</li>
+							<li class="menu-item header__menu-item">
+								<a href="#">FAQ</a>
+							</li>
+							<li class="menu-item header__menu-item">
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="social">
+						<a href="#" target="_blank">
+							<svg class="social__icon">
+								<use xlink:href="#tg-icon"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank">
+							<svg class="social__icon">
+								<use xlink:href="#wa-icon"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg class="social__icon">
+								<use xlink:href="#phone-icon"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="cart">
+						<a href="#" class="cart__wrapper" title="Перейти в корзину">
+							<svg>
+								<use xlink:href="#cart-main"></use>
+							</svg>
+							<div class="cart__num" id="cart_num">0</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="order">
+			<div class="container">
+				<div class="page__header">
+					<div class="page__header--left">
+						<h2 class="page-title">Корзина</h2>
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item"><a href="/">Главная</a></li>
+							<li class="breadcrumbs__item"><a href="order.html" class="current">Корзина</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="order-list">
+					<div class="order-list__header">
+						<div class="order-list__col-title">Товар:</div>
+						<div class="order-list__col-title">Описание:</div>
+						<div class="order-list__col-title">Количество:</div>
+						<div class="order-list__col-title">Стоимость:</div>
+					</div>
+					<div class="order-list__body">
+						<div class="order-list__item">
+							<a href="#" class="order-list__img"><img src="img/cards/hit1.jpg" alt="photo"></a>
+							<div class="order-list__descr">
+								<div class="order-list__descr-wrapper">
+									<h3 class="order-list__title min-title"><a href="#">Жемчужный "Океан" с&nbsp;гелиотисом</a>
+									</h3>
+									<p>
+										20 мм <br>
+										Производитель: Мексика
+									</p>
+								</div>
+							</div>
+							<div class="order-list__count">
+								<div class="count">
+									<button type="button" class="count__minus minus" aria-label="Уменьшить количество">–</button>
+									<div class="count__box">
+										<input type="number" name="num" class="count__input" min="1" max="100" value="1"
+											autocomplete="off">
+									</div>
+									<button type="button" class="count__plus plus" aria-label="Увеличить количество">+</button>
+								</div>
+							</div>
+							<div class="order-list__price">
+								<div class="order-list__price-wrapper">
+									<span class="price price--red">2500 ₽</span>
+									<br>
+									<span class="price price--gray">4500 ₽</span>
+								</div>
+							</div>
+							<div class="order-list__del">
+								<div class="order-list__del-wrapper">
+									<button type="button" class="order-list__btn">
+										<svg class="basket__icon">
+											<use xlink:href="#basket"></use>
+										</svg>
+										<span>Удалить</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="order-list__item">
+							<a href="#" class="order-list__img"><img src="img/cards/hit2.jpg" alt="photo"></a>
+							<div class="order-list__descr">
+								<div class="order-list__descr-wrapper">
+									<h3 class="order-list__title min-title"><a href="#">Серебряный с "бриллиантовыми" ножками</a>
+									</h3>
+									<p>
+										20 мм <br>
+										Производитель: Мексика
+									</p>
+								</div>
+							</div>
+							<div class="order-list__count">
+								<div class="count">
+									<button type="button" class="count__minus minus" aria-label="Уменьшить количество">–</button>
+									<div class="count__box">
+										<input type="number" name="num" class="count__input" min="1" max="100" value="1"
+											autocomplete="off">
+									</div>
+									<button type="button" class="count__plus plus" aria-label="Увеличить количество">+</button>
+								</div>
+							</div>
+							<div class="order-list__price">
+								<div class="order-list__price-wrapper">
+									<span class="price price--normal">4500 ₽</span>
+								</div>
+							</div>
+							<div class="order-list__del">
+								<div class="order-list__del-wrapper">
+									<button type="button" class="order-list__btn">
+										<svg class="basket__icon">
+											<use xlink:href="#basket"></use>
+										</svg>
+										<span>Удалить</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 offset-md-9 offset-sm-6 offset-5 col-7">
+						<div class="order-list__footer">
+							<div class="order-list__delivery">
+								Доставка: <span class="price price--ml">500 ₽</span>
+							</div>
+							<div class="order-list__sum">
+								Итого: <span class="price price--lg price--ml">7000 ₽</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="order-checkout">
+					<div class="row">
+						<div class="col-md-5 col-xl-5 col-lg-5 col-md-5 order-lg-1 order-md-1 order-sm-2 order-2">
+							<form action="/" method="post" class="order-form">
+								<label>
+									<span class="name">ФИО: <span class="required">*</span></span>
+									<input type="text" name="name" autocomplete="on" required>
+								</label>
+
+								<label>
+									<span>Телефон: <span class="required">*</span></span>
+									<input type="tel" name="phone" autocomplete="on" required>
+								</label>
+
+								<label>
+									<span>E-mail:</span>
+									<input type="email" name="email" autocomplete="on">
+								</label>
+
+								<label>
+									<span>Город:</span>
+									<select name="city">
+										<option value="Москва">Москва</option>
+										<option value="Санкт-Петербург">Санкт-Петербург</option>
+										<option value="Пенза">Пенза</option>
+										<option value="Абакан">Абакан</option>
+										<option value="Азов">Азов</option>
+										<option value="Александров">Александров</option>
+										<option value="Алексин">Алексин</option>
+										<option value="Альметьевск">Альметьевск</option>
+										<option value="Анапа">Анапа</option>
+										<option value="Ангарск">Ангарск</option>
+										<option value="Анжеро">Анжеро-Судженск</option>
+										<option value="Апатиты">Апатиты</option>
+										<option value="Арзамас">Арзамас</option>
+										<option value="Армавир">Армавир</option>
+										<option value="Арсеньев">Арсеньев</option>
+										<option value="Артем">Артем</option>
+										<option value="Архангельск">Архангельск</option>
+										<option value="Асбест">Асбест</option>
+										<option value="Астрахань">Астрахань</option>
+										<option value="Ачинск">Ачинск</option>
+										<option value="Балаково">Балаково</option>
+										<option value="Балахна">Балахна</option>
+										<option value="Балашиха">Балашиха</option>
+										<option value="Балашов">Балашов</option>
+										<option value="Барнаул">Барнаул</option>
+										<option value="Батайск">Батайск</option>
+										<option value="Белгород">Белгород</option>
+										<option value="Белебей">Белебей</option>
+										<option value="Белово">Белово</option>
+										<option value="Белогорск (Амурская область)">Белогорск (Амурская область)</option>
+										<option value="Белорецк">Белорецк</option>
+										<option value="Белореченск">Белореченск</option>
+										<option value="Бердск">Бердск</option>
+										<option value="Березники">Березники</option>
+										<option value="Березовский (Свердловская область)">Березовский (Свердловская
+											область)</option>
+										<option value="Бийск">Бийск</option>
+										<option value="Биробиджан">Биробиджан</option>
+										<option value="Благовещенск (Амурская область)">Благовещенск (Амурская область)
+										</option>
+										<option value="Бор">Бор</option>
+										<option value="Борисоглебск">Борисоглебск</option>
+										<option value="Боровичи">Боровичи</option>
+										<option value="Братск">Братск</option>
+										<option value="Брянск">Брянск</option>
+										<option value="Бугульма">Бугульма</option>
+										<option value="Буденновск">Буденновск</option>
+										<option value="Бузулук">Бузулук</option>
+										<option value="Буйнакск">Буйнакск</option>
+										<option value="Великие Луки">Великие Луки</option>
+										<option value="Великий Новгород">Великий Новгород</option>
+										<option value="Верхняя Пышма">Верхняя Пышма</option>
+										<option value="Видное">Видное</option>
+										<option value="Владивосток">Владивосток</option>
+										<option value="Владикавказ">Владикавказ</option>
+										<option value="Владимир">Владимир</option>
+										<option value="Волгоград">Волгоград</option>
+										<option value="Волгодонск">Волгодонск</option>
+										<option value="Волжск">Волжск</option>
+										<option value="Волжский">Волжский</option>
+										<option value="Вологда">Вологда</option>
+										<option value="Вольск">Вольск</option>
+										<option value="Воркута">Воркута</option>
+										<option value="Воронеж">Воронеж</option>
+										<option value="Воскресенск">Воскресенск</option>
+										<option value="Воткинск">Воткинск</option>
+										<option value="Всеволожск">Всеволожск</option>
+										<option value="Выборг">Выборг</option>
+										<option value="Выкса">Выкса</option>
+										<option value="Вязьма">Вязьма</option>
+										<option value="Гатчина">Гатчина</option>
+										<option value="Геленджик">Геленджик</option>
+										<option value="Георгиевск">Георгиевск</option>
+										<option value="Глазов">Глазов</option>
+										<option value="Горно-Алтайск">Горно-Алтайск</option>
+										<option value="Грозный">Грозный</option>
+										<option value="Губкин">Губкин</option>
+										<option value="Гудермес">Гудермес</option>
+										<option value="Гуково">Гуково</option>
+										<option value="Гусь-Хрустальный">Гусь-Хрустальный</option>
+										<option value="Дербент">Дербент</option>
+										<option value="Дзержинск">Дзержинск</option>
+										<option value="Димитровград">Димитровград</option>
+										<option value="Дмитров">Дмитров</option>
+										<option value="Долгопрудный">Долгопрудный</option>
+										<option value="Домодедово">Домодедово</option>
+										<option value="Донской">Донской</option>
+										<option value="Дубна">Дубна</option>
+										<option value="Евпатория">Евпатория</option>
+										<option value="Егорьевск">Егорьевск</option>
+										<option value="Ейск">Ейск</option>
+										<option value="Екатеринбург">Екатеринбург</option>
+										<option value="Елабуга">Елабуга</option>
+										<option value="Елец">Елец</option>
+										<option value="Ессентуки">Ессентуки</option>
+										<option value="Железногорск (Красноярский край)">Железногорск (Красноярский край)
+										</option>
+										<option value="Железногорск (Курская область)">Железногорск (Курская область)
+										</option>
+										<option value="Жигулевск">Жигулевск</option>
+										<option value="Жуковский">Жуковский</option>
+										<option value="Заречный">Заречный</option>
+										<option value="Зеленогорск">Зеленогорск</option>
+										<option value="Зеленодольск">Зеленодольск</option>
+										<option value="Златоуст">Златоуст</option>
+										<option value="Иваново">Иваново</option>
+										<option value="Ивантеевка">Ивантеевка</option>
+										<option value="Ижевск">Ижевск</option>
+										<option value="Избербаш">Избербаш</option>
+										<option value="Иркутск">Иркутск</option>
+										<option value="Искитим">Искитим</option>
+										<option value="Ишим">Ишим</option>
+										<option value="Ишимбай">Ишимбай</option>
+										<option value="Йошкар-Ола">Йошкар-Ола</option>
+										<option value="Казань">Казань</option>
+										<option value="Калининград">Калининград</option>
+										<option value="Калуга">Калуга</option>
+										<option value="Каменск-Уральский">Каменск-Уральский</option>
+										<option value="Каменск-Шахтинский">Каменск-Шахтинский</option>
+										<option value="Камышин">Камышин</option>
+										<option value="Канск">Канск</option>
+										<option value="Каспийск">Каспийск</option>
+										<option value="Кемерово">Кемерово</option>
+										<option value="Керчь">Керчь</option>
+										<option value="Кинешма">Кинешма</option>
+										<option value="Кириши">Кириши</option>
+										<option value="Киров (Кировская область)">Киров (Кировская область)</option>
+										<option value="Кирово-Чепецк">Кирово-Чепецк</option>
+										<option value="Киселевск">Киселевск</option>
+										<option value="Кисловодск">Кисловодск</option>
+										<option value="Клин">Клин</option>
+										<option value="Клинцы">Клинцы</option>
+										<option value="Ковров">Ковров</option>
+										<option value="Когалым">Когалым</option>
+										<option value="Коломна">Коломна</option>
+										<option value="Комсомольск-на-Амуре">Комсомольск-на-Амуре</option>
+										<option value="Копейск">Копейск</option>
+										<option value="Королев">Королев</option>
+										<option value="Кострома">Кострома</option>
+										<option value="Котлас">Котлас</option>
+										<option value="Красногорск">Красногорск</option>
+										<option value="Краснодар">Краснодар</option>
+										<option value="Краснокаменск">Краснокаменск</option>
+										<option value="Краснокамск">Краснокамск</option>
+										<option value="Краснотурьинск">Краснотурьинск</option>
+										<option value="Красноярск">Красноярск</option>
+										<option value="Кропоткин">Кропоткин</option>
+										<option value="Крымск">Крымск</option>
+										<option value="Кстово">Кстово</option>
+										<option value="Кузнецк">Кузнецк</option>
+										<option value="Кумертау">Кумертау</option>
+										<option value="Кунгур">Кунгур</option>
+										<option value="Курган">Курган</option>
+										<option value="Курск">Курск</option>
+										<option value="Кызыл">Кызыл</option>
+										<option value="Лабинск">Лабинск</option>
+										<option value="Лениногорск">Лениногорск</option>
+										<option value="Ленинск-Кузнецкий">Ленинск-Кузнецкий</option>
+										<option value="Лесосибирск">Лесосибирск</option>
+										<option value="Липецк">Липецк</option>
+										<option value="Лиски">Лиски</option>
+										<option value="Лобня">Лобня</option>
+										<option value="Лысьва">Лысьва</option>
+										<option value="Лыткарино">Лыткарино</option>
+										<option value="Люберцы">Люберцы</option>
+										<option value="Магадан">Магадан</option>
+										<option value="Магнитогорск">Магнитогорск</option>
+										<option value="Майкоп">Майкоп</option>
+										<option value="Махачкала">Махачкала</option>
+										<option value="Междуреченск">Междуреченск</option>
+										<option value="Мелеуз">Мелеуз</option>
+										<option value="Миасс">Миасс</option>
+										<option value="Минеральные Воды">Минеральные Воды</option>
+										<option value="Минусинск">Минусинск</option>
+										<option value="Михайловка">Михайловка</option>
+										<option value="Михайловск (Ставропольский край)">Михайловск (Ставропольский край)
+										</option>
+										<option value="Мичуринск">Мичуринск</option>
+										<option value="Мурманск">Мурманск</option>
+										<option value="Муром">Муром</option>
+										<option value="Мытищи">Мытищи</option>
+										<option value="Набережные Челны">Набережные Челны</option>
+										<option value="Назарово">Назарово</option>
+										<option value="Назрань">Назрань</option>
+										<option value="Нальчик">Нальчик</option>
+										<option value="Наро-Фоминск">Наро-Фоминск</option>
+										<option value="Находка">Находка</option>
+										<option value="Невинномысск">Невинномысск</option>
+										<option value="Нерюнгри">Нерюнгри</option>
+										<option value="Нефтекамск">Нефтекамск</option>
+										<option value="Нефтеюганск">Нефтеюганск</option>
+										<option value="Нижневартовск">Нижневартовск</option>
+										<option value="Нижнекамск">Нижнекамск</option>
+										<option value="Нижний Новгород">Нижний Новгород</option>
+										<option value="Нижний Тагил">Нижний Тагил</option>
+										<option value="Новоалтайск">Новоалтайск</option>
+										<option value="Новокузнецк">Новокузнецк</option>
+										<option value="Новокуйбышевск">Новокуйбышевск</option>
+										<option value="Новомосковск">Новомосковск</option>
+										<option value="Новороссийск">Новороссийск</option>
+										<option value="Новосибирск">Новосибирск</option>
+										<option value="Новотроицк">Новотроицк</option>
+										<option value="Новоуральск">Новоуральск</option>
+										<option value="Новочебоксарск">Новочебоксарск</option>
+										<option value="Новочеркасск">Новочеркасск</option>
+										<option value="Новошахтинск">Новошахтинск</option>
+										<option value="Новый Уренгой">Новый Уренгой</option>
+										<option value="Ногинск">Ногинск</option>
+										<option value="Норильск">Норильск</option>
+										<option value="Ноябрьск">Ноябрьск</option>
+										<option value="Нягань">Нягань</option>
+										<option value="Обнинск">Обнинск</option>
+										<option value="Одинцово">Одинцово</option>
+										<option value="Озерск (Челябинская область)">Озерск (Челябинская область)</option>
+										<option value="Октябрьский">Октябрьский</option>
+										<option value="Омск">Омск</option>
+										<option value="Орел">Орел</option>
+										<option value="Оренбург">Оренбург</option>
+										<option value="Орехово-Зуево">Орехово-Зуево</option>
+										<option value="Орск">Орск</option>
+										<option value="Павлово">Павлово</option>
+										<option value="Павловский Посад">Павловский Посад</option>
+										<option value="Первоуральск">Первоуральск</option>
+										<option value="Пермь">Пермь</option>
+										<option value="Петрозаводск">Петрозаводск</option>
+										<option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
+										<option value="Подольск">Подольск</option>
+										<option value="Полевской">Полевской</option>
+										<option value="Прокопьевск">Прокопьевск</option>
+										<option value="Прохладный">Прохладный</option>
+										<option value="Псков">Псков</option>
+										<option value="Пушкино">Пушкино</option>
+										<option value="Пятигорск">Пятигорск</option>
+										<option value="Раменское">Раменское</option>
+										<option value="Ревда">Ревда</option>
+										<option value="Реутов">Реутов</option>
+										<option value="Ржев">Ржев</option>
+										<option value="Рославль">Рославль</option>
+										<option value="Россошь">Россошь</option>
+										<option value="Ростов-на-Дону">Ростов-на-Дону</option>
+										<option value="Рубцовск">Рубцовск</option>
+										<option value="Рыбинск">Рыбинск</option>
+										<option value="Рязань">Рязань</option>
+										<option value="Салават">Салават</option>
+										<option value="Сальск">Сальск</option>
+										<option value="Самара">Самара</option>
+										<option value="Саранск">Саранск</option>
+										<option value="Сарапул">Сарапул</option>
+										<option value="Саратов">Саратов</option>
+										<option value="Саров">Саров</option>
+										<option value="Свободный">Свободный</option>
+										<option value="Севастополь">Севастополь</option>
+										<option value="Северодвинск">Северодвинск</option>
+										<option value="Северск">Северск</option>
+										<option value="Сергиев Посад">Сергиев Посад</option>
+										<option value="Серов">Серов</option>
+										<option value="Серпухов">Серпухов</option>
+										<option value="Сертолово">Сертолово</option>
+										<option value="Сибай">Сибай</option>
+										<option value="Симферополь">Симферополь</option>
+										<option value="Славянск-на-Кубани">Славянск-на-Кубани</option>
+										<option value="Смоленск">Смоленск</option>
+										<option value="Соликамск">Соликамск</option>
+										<option value="Солнечногорск">Солнечногорск</option>
+										<option value="Сосновый Бор">Сосновый Бор</option>
+										<option value="Сочи">Сочи</option>
+										<option value="Ставрополь">Ставрополь</option>
+										<option value="Старый Оскол">Старый Оскол</option>
+										<option value="Стерлитамак">Стерлитамак</option>
+										<option value="Ступино">Ступино</option>
+										<option value="Сургут">Сургут</option>
+										<option value="Сызрань">Сызрань</option>
+										<option value="Сыктывкар">Сыктывкар</option>
+										<option value="Таганрог">Таганрог</option>
+										<option value="Тамбов">Тамбов</option>
+										<option value="Тверь">Тверь</option>
+										<option value="Тимашевск">Тимашевск</option>
+										<option value="Тимашевск">Тихвин</option>
+										<option value="Тихорецк">Тихорецк</option>
+										<option value="Тобольск">Тобольск</option>
+										<option value="Тольятти">Тольятти</option>
+										<option value="Томск">Томск</option>
+										<option value="Троицк">Троицк</option>
+										<option value="Туапсе">Туапсе</option>
+										<option value="Туймазы">Туймазы</option>
+										<option value="Тула">Тула</option>
+										<option value="Тюмень">Тюмень</option>
+										<option value="Узловая">Узловая</option>
+										<option value="Улан-Удэ">Улан-Удэ</option>
+										<option value="Ульяновск">Ульяновск</option>
+										<option value="Урус-Мартан">Урус-Мартан</option>
+										<option value="Усолье-Сибирское">Усолье-Сибирское</option>
+										<option value="Уссурийск">Уссурийск</option>
+										<option value="Усть-Илимск">Усть-Илимск</option>
+										<option value="Уфа">Уфа</option>
+										<option value="Ухта">Ухта</option>
+										<option value="Феодосия">Феодосия</option>
+										<option value="Фрязино">Фрязино</option>
+										<option value="Хабаровск">Хабаровск</option>
+										<option value="Ханты-Мансийск">Ханты-Мансийск</option>
+										<option value="Хасавюрт">Хасавюрт</option>
+										<option value="Химки">Химки</option>
+										<option value="Чайковский">Чайковский</option>
+										<option value="Чапаевск">Чапаевск</option>
+										<option value="Чебоксары">Чебоксары</option>
+										<option value="Челябинск">Челябинск</option>
+										<option value="Черемхово">Черемхово</option>
+										<option value="Череповец">Череповец</option>
+										<option value="Черкесск">Черкесск</option>
+										<option value="Черногорск">Черногорск</option>
+										<option value="Чехов">Чехов</option>
+										<option value="Чистополь">Чистополь</option>
+										<option value="Чита">Чита</option>
+										<option value="Шадринск">Шадринск</option>
+										<option value="Шали">Шали</option>
+										<option value="Шахты">Шахты</option>
+										<option value="Шуя">Шуя</option>
+										<option value="Щекино">Щекино</option>
+										<option value="Щелково">Щелково</option>
+										<option value="Электросталь">Электросталь</option>
+										<option value="Элиста">Элиста</option>
+										<option value="Энгельс">Энгельс</option>
+										<option value="Южно-Сахалинск">Южно-Сахалинск</option>
+										<option value="Юрга">Юрга</option>
+										<option value="Якутск">Якутск</option>
+										<option value="Ялта">Ялта</option>
+										<option value="Ярославль">Ярославль</option>
+									</select>
+								</label>
+
+								<label>
+									<span>Индекс:</span>
+									<input type="text" name="zip">
+								</label>
+
+								<div class="radios">
+									<div class="shipping">
+										<span class="mb">Доставка:</span>
+										<label class="radio"><input type="radio" name="shipping-radio" checked><span
+												class="outer"><span class="inner"></span></span>В пределах МКАД - 500
+											руб.</label>
+										<label class="radio"><input type="radio" name="shipping-radio"><span class="outer"><span
+													class="inner"></span></span>Почта РФ - 300 руб.</label>
+										<label class="radio"><input type="radio" name="shipping-radio"><span class="outer"><span
+													class="inner"></span></span>СДЭК</label>
+									</div>
+
+									<div class="payment">
+										<span class="mb">Оплата:</span>
+										<label class="radio"><input type="radio" name="payment-radio" checked><span
+												class="outer"><span class="inner"></span></span>Картой онлайн</label>
+									</div>
+								</div>
+
+								<label>
+									<span>Комментарий к заказу:</span>
+									<textarea class="mess" name="message"></textarea>
+								</label>
+
+								<button type="submit" class="btn btn--solid">Перейти к оплате</button>
+
+							</form>
+						</div>
+						<div class="col-md-6 col-xl-6 col-lg-6 col-md-6 order-lg-2 order-md-2 order-sm-1 order-1 offset-md-1 offset-0">
+							<div class="tabs-block">
+								<span>Выбрать упаковку:</span>
+
+								<section class="tabs">
+									<div class="tabs__wrapper">
+										<div id="tab-1" class="tabs__item tab--border show">
+											<img src="img/package/pack0.jpg" alt="package">
+										</div>
+										<div id="tab-2" class="tabs__item">
+											<img src="img/package/pack1.jpg" alt="package">
+										</div>
+										<div id="tab-3" class="tabs__item">
+											<img src="img/package/pack2.jpg" alt="package">
+										</div>
+										<div id="tab-4" class="tabs__item">
+											<img src="img/package/pack3.jpg" alt="package">
+										</div>
+										<div id="tab-5" class="tabs__item">
+											<img src="img/package/pack4.jpg" alt="package">
+										</div>
+									</div>
+								</section>
+
+								<section class="tabs-content">
+
+									<div id="tab-1-content" class="tabs-content__item show">
+										Стандартная упаковка
+										<div class="tabs-content__video">
+											<img src="icons/play.svg" alt="play">
+											<a href="#" data-hystmodal="#myModal-1">Видео-презентация</a>
+										</div>
+									</div>
+
+									<div id="tab-2-content" class="tabs-content__item">
+										Розовая подарочная упаковка
+										<div class="tabs-content__video">
+											<img src="icons/play.svg" alt="play">
+											<a href="#" data-hystmodal="#myModal-2">Видео-презентация</a>
+										</div>
+									</div>
+
+									<div id="tab-3-content" class="tabs-content__item">
+										Белая подарочная упаковка
+										<div class="tabs-content__video">
+											<img src="icons/play.svg" alt="play">
+											<a href="#" data-hystmodal="#myModal-3">Видео-презентация</a>
+										</div>
+									</div>
+
+									<div id="tab-4-content" class="tabs-content__item">
+										Бирюзовая подарочная упаковка
+										<div class="tabs-content__video">
+											<img src="icons/play.svg" alt="play">
+											<a href="#" data-hystmodal="#myModal-4">Видео-презентация</a>
+										</div>
+									</div>
+
+									<div id="tab-5-content" class="tabs-content__item">
+										Желтая подарочная упаковка
+										<div class="tabs-content__video">
+											<img src="icons/play.svg" alt="play">
+											<a href="#" data-hystmodal="#myModal-5">Видео-презентация</a>
+										</div>
+									</div>
+
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="recent section section--page">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section-title">Вы недавно смотрели:</h2>
+					<div class="arrows">
+						<svg class="prev r-prev">
+							<use xlink:href="#chevron-prev"></use>
+						</svg>
+						<svg class="next r-next">
+							<use xlink:href="#chevron-prev"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="sslider recent__slider">
+
+					<div class="sslider__item card card--lg">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit1.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart card__cart--filled" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<a href="#" class="card__img"><img src="img/cards/hit2.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Золотое сердце</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">2500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<div class="label label--sale">-20%</div>
+						<a href="#" class="card__img"><img src="img/cards/hit3.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">3500 ₽</span>
+								<span class="card__price--gray">8500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<a href="#" class="card__img"><img src="img/cards/hit4.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Жемчужный «Океан» с гелиотисом</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Мексика <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--normal">1500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="sslider__item card card--lg">
+						<div class="label label--hit">Хит</div>
+						<a href="#" class="card__img"><img src="img/cards/hit5.jpg" alt="slide"></a>
+						<h3 class="card__title min-title"><a href="#">Розовый с серебряными ножками</a></h3>
+						<p class="card__descr">
+							20 мм <br>
+							Производитель: Тайланд <br>
+							В наличии
+						</p>
+						<div class="card__footer">
+							<div class="card__price">
+								<span class="card__price--red">2500 ₽</span>
+								<span class="card__price--gray">4500 ₽</span>
+							</div>
+							<div class="card__cart" title="Добавить в корзину">
+								<svg class="card__cart__icon">
+									<use xlink:href="#cart-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a class="footer__logo logo" href="index.html">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<nav>
+						<ul class="footer__menu menu">
+							<li>
+								<a href="index.html">Главная</a>
+							</li>
+							<li>
+								<a href="catalog.html">Каталог</a>
+							</li>
+							<li>
+								<a href="#">Магазин</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="social">
+						<a href="#" target="_blank">
+							<svg class="social__icon">
+								<use xlink:href="#tg-icon"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank">
+							<svg class="social__icon">
+								<use xlink:href="#wa-icon"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg class="social__icon">
+								<use xlink:href="#phone-icon"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="copyright">© 2011-2023 Mexicanbola.ru</div>
+			</div>
+		</footer>
+
+		<!-- modals -->
+		<div class="hystmodal hystmodal--video" id="myModal-1" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<button data-hystclose class="hystmodal__close">Закрыть</button>
+					<video width="640" height="360" controls>
+						<source src="video/green.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="hystmodal hystmodal--video" id="myModal-2" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<button data-hystclose class="hystmodal__close">Закрыть</button>
+					<video width="640" height="360" controls>
+						<source src="video/pink.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="hystmodal hystmodal--video" id="myModal-3" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<button data-hystclose class="hystmodal__close">Закрыть</button>
+					<video width="640" height="360" controls>
+						<source src="video/pink.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="hystmodal hystmodal--video" id="myModal-4" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<button data-hystclose class="hystmodal__close">Закрыть</button>
+					<video width="640" height="360" controls>
+						<source src="video/pink.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="hystmodal hystmodal--video" id="myModal-5" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<button data-hystclose class="hystmodal__close">Закрыть</button>
+					<video width="640" height="360" controls>
+						<source src="video/pink.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+
+		<div class="toTop" title="Наверх">
+			<svg class="toTop__icon">
+				<use xlink:href="#chevron-prev"></use>
+			</svg>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="js/libs/slick.min.js"></script>
+	<script src="js/libs/hystmodal.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
