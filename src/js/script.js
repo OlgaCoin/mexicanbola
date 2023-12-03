@@ -364,7 +364,7 @@ $(document).ready(function () {
 	function addCloseHandler(closeLink) {
 		closeLink.addEventListener("click", stopVideoHandler);
 	}
-	var closeLinks = document.querySelectorAll(".hystmodal__close, .hystmodal__wrap");
+	var closeLinks = document.querySelectorAll(".hystmodal, .hystmodal__close, .hystmodal__wrap");
 	closeLinks.forEach(addCloseHandler);
 
 });

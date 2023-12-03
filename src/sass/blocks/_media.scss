@@ -274,19 +274,23 @@
 	.tabs-block {
 		margin-bottom: 56px;
 	}
-	.hystmodal--video .hystmodal__window {
-		height: auto;
-		& .hystmodal__close {
-			right: 2px;
-			top: 2px;
-			background-color: rgba(0,0,0,.2);
-			outline: 0;
-			border: none;
+	.hystmodal.hystmodal--video {
+		& .hystmodal__window {
+			height: auto;
+			& .hystmodal__close {
+				top: 10px;
+				right: 10px;
+				width: 24px;
+				height: 24px;
+				background-color: rgba(0,0,0,.2);
+				outline: 0;
+				border: none;
+			}
 		}
-	}
-	.hystmodal--video video {
-		width: 100%;
-		height: auto;
+		& video {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
