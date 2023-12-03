@@ -1,0 +1,25 @@
+
+.error-page {
+	background-image: url('../img/error.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 50px 24px;
+	&__wrapper {
+		margin-top: 460px;
+		& p {
+			font-family: $f_serif;
+			font-size: 22px;
+			line-height: 36px;
+			font-weight: 600;
+			margin-bottom: 30px;
+			color: $t_caption;
+		}
+	}
+}
