@@ -1,5 +1,6 @@
 .count {
 	display: flex;
+	align-items: center;
 	&__minus, &__plus {
 		border-radius: $radius;
 		width: 36px;

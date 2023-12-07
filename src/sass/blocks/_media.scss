@@ -278,7 +278,7 @@
 		& .hystmodal__window {
 			height: auto;
 			& .hystmodal__close {
-				top: 10px;
+				top: -60px;
 				right: 10px;
 				width: 24px;
 				height: 24px;
@@ -290,6 +290,7 @@
 		& video {
 			width: 100%;
 			height: auto;
+			top: -70px;
 		}
 	}
 }

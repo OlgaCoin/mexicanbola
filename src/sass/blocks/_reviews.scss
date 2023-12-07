@@ -1,0 +1,20 @@
+.reviews {
+	&__wrapper {
+		margin-bottom: 40px;
+	}
+	&__item {
+		padding: 15px 0 15px;
+	}
+	&__info {
+		color: $t_caption;
+		font-weight: 500;
+		margin-bottom: 18px;
+		& span {
+			color: $outline;
+			margin: 0 12px;
+		}
+	}
+	&__text {
+		font-weight: 500;
+	}
+}

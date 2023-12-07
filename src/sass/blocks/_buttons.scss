@@ -14,7 +14,7 @@
 		display: flex;
 		justify-content: center;
 	}
-	&--solid {		
+	&--solid {
 		border: none;	
 		background-image: $gradient_primary;
 		box-shadow: none;
@@ -35,6 +35,7 @@
 		}
 	}
 	&--stroke {
+		background-color: #fff;
 		border: 1px solid $outline;
 		color: $t_gray;
 		transition: $trans;
@@ -62,6 +63,48 @@
 			}
 		}
 	}
+	&.add-to-cart {
+		border: none;	
+		background-image: $gradient_primary;
+		box-shadow: none;
+		transition: all .6s ease-in-out;
+		background-size: 1000% 100%;
+		&:hover {
+			border: none;
+			outline: none;
+			box-shadow: $shadow_primary;
+			color: $white;
+			background-size: 100% 100%;
+			background-position: 100% 0;
+			transition: all .4s ease-in;
+		}
+		&:focus {
+			border: none;
+			outline: none;
+		}
+		&.added {
+			display: none;
+		}
+	}
+	&.go-to-cart {
+		display: none;
+		background-color: #fff;
+		box-shadow:none;
+		background-image: none;
+		border: 1px solid $primary_dark;
+		color: $primary_dark;
+		// &:hover, &:focus {
+		// 	color: $primary_dark;
+		// 	border: 1px solid $primary_dark;
+		// }
+		&:focus {
+			outline: none;
+		}
+		&.active {
+			display: flex;
+		}
+	}
+
 }
 .label {
 	position: absolute;
@@ -88,3 +131,4 @@
 		padding: 2px 7px;
 	}
 }
+

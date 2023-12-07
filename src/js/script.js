@@ -25,6 +25,14 @@ $(document).ready(function () {
 		$(".menu-mob").toggleClass("move");
 	});
 
+	//add-to-cart button
+
+	$('.add-to-cart').click(function () {
+		$(this).addClass("added");
+		$(".go-to-cart").addClass("active");
+	});
+
+
 	//slick-slider
 
 	$('.hit__slider').slick({
@@ -366,6 +374,40 @@ $(document).ready(function () {
 	}
 	var closeLinks = document.querySelectorAll(".hystmodal, .hystmodal__close, .hystmodal__wrap");
 	closeLinks.forEach(addCloseHandler);
+
+
+	//product gallery
+
+	const activeImage = document.querySelector(".product__image .active");
+	const productImages = document.querySelectorAll(".product__image-list img");
+
+	function changeImage(e) {
+		activeImage.src = e.target.src;
+	}
+
+	productImages.forEach(image => image.addEventListener("click", changeImage));
+
+	$('.product__image-item').click(function () {
+		$('.product__image-item').not(this).removeClass('active')
+		$(this).toggleClass('active')
+	})
+
+
+
+	const allVideos = document.querySelectorAll(".product__video");
+
+	allVideos.forEach((v) => {
+		v.addEventListener("mouseover", () => {
+			const video = v.querySelector("video");
+			video.play();
+		});
+		v.addEventListener("mouseleave", () => {
+			const video = v.querySelector("video");
+			video.pause();
+		});
+	});
+
+
 
 });
 
