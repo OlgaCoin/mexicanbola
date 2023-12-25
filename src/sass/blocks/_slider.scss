@@ -13,6 +13,15 @@
 			margin: 0 -12px;
 		}
 	}
+	&.reviews__slider {
+		margin-bottom: 25px;
+		& .sslider__item {
+			margin: 0 12px;
+		}
+		& .slick-list {
+			margin: 0 -12px;
+		}
+	}
 }
 .slick-track {
 	display: flex;
@@ -44,4 +53,36 @@
 }
 .next {	
 	transform: rotate(180deg);
+}
+.slick-dots {
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 15;
+	align-self: center;
+	display: flex;
+	& li {
+		margin-right: 8px;
+		& button {
+		border: none;
+		color: transparent;
+		font-size: 0;
+		outline: none;
+		padding: 0;
+		height: 6px;
+      width: 6px;
+      display: inline-block;
+      background: $t_gray;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 300ms ease;
+		}
+		&:hover button, &.slick-active button {
+			width: 25px;
+			background: $primary_dark;
+		}
+	}
 }

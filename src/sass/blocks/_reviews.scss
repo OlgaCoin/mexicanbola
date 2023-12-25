@@ -1,9 +1,9 @@
 .reviews {
-	&__wrapper {
-		margin-bottom: 40px;
-	}
 	&__item {
-		padding: 15px 0 15px;
+		padding: 30px 30px 10px;
+		border: $border;
+		border-radius: $radius_sm;
+		min-height: 220px;
 	}
 	&__info {
 		color: $t_caption;
@@ -16,5 +16,32 @@
 	}
 	&__text {
 		font-weight: 500;
+	}
+	&__submit {
+		&-link {
+			display: inline-flex;
+			justify-content: flex-start;
+			align-items: center;
+			font-weight: 700;
+			letter-spacing: 0.16px;
+			text-transform: uppercase;
+			& > a {
+				color: $t_gray;
+				transition: $trans;
+			}
+			& > svg {
+				width: 24px;
+				height: 24px;
+				margin-right: 12px;
+				fill: $t_gray;
+				transition: $trans;
+			}
+			&:hover > a {
+				color: $primary_dark;
+			}
+			&:hover > svg {
+				fill: $primary_dark;
+			}
+		}
 	}
 }

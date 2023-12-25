@@ -5,6 +5,9 @@
 		width: 95%;
 		overflow: hidden;
 		border-radius: $radius_sm;
+		&:not(:nth-child(1)) {
+			display: none;
+		}
 		& img {
 			object-fit: cover;
 			width: 100%;

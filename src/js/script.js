@@ -269,6 +269,63 @@ $(document).ready(function () {
 		]
 	});
 
+	$('.reviews__slider').slick({
+		speed: 800,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		// autoplay: true,
+		prevArrow: $('.rev-prev'),
+		nextArrow: $('.rev-next'),
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+	$('.product__slider').slick({
+		responsive: [
+			{
+				breakpoint: 5000,
+				settings: "unslick"
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					speed: 800,
+					dots: true
+				}
+			}
+		]
+	});
+
 	// catalog sorting
 	$('.filter__form').change(function () {
 		$("#width_tmp_option").html($('.filter__form option:selected').text());
@@ -372,13 +429,13 @@ $(document).ready(function () {
 	function addCloseHandler(closeLink) {
 		closeLink.addEventListener("click", stopVideoHandler);
 	}
-	var closeLinks = document.querySelectorAll(".hystmodal, .hystmodal__close, .hystmodal__wrap");
+	var closeLinks = document.querySelectorAll(".hystmodal.hystmodal--video, .hystmodal--video .hystmodal__close, .hystmodal--video .hystmodal__wrap");
 	closeLinks.forEach(addCloseHandler);
 
 
 	//product gallery
 
-	const activeImage = document.querySelector(".product__image .active");
+	const activeImage = document.querySelector(".product__image img.current");
 	const productImages = document.querySelectorAll(".product__image-list img");
 
 	function changeImage(e) {
@@ -393,7 +450,6 @@ $(document).ready(function () {
 	})
 
 
-
 	const allVideos = document.querySelectorAll(".product__video");
 
 	allVideos.forEach((v) => {
@@ -406,8 +462,6 @@ $(document).ready(function () {
 			video.pause();
 		});
 	});
-
-
 
 });
 
