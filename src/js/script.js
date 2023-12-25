@@ -308,22 +308,29 @@ $(document).ready(function () {
 		]
 	});
 
-	$('.product__slider').slick({
-		responsive: [
-			{
-				breakpoint: 5000,
-				settings: "unslick"
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					speed: 800,
-					dots: true
+	/* Slick needs no get Reinitialized on window Resize after it was destroyed */
+	$(window).on('load resize orientationchange', function () {
+		$('.product__slider').each(function () {
+			var $carousel = $(this);
+			/* Initializes a slick carousel only on mobile screens */
+			// slick on mobile
+			if ($(window).width() > 768) {
+				if ($carousel.hasClass('slick-initialized')) {
+					$carousel.slick('unslick');
 				}
 			}
-		]
+			else {
+				if (!$carousel.hasClass('slick-initialized')) {
+					$carousel.slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						speed: 800,
+						dots: true,
+						mobileFirst: true
+					});
+				}
+			}
+		});
 	});
 
 	// catalog sorting
@@ -384,7 +391,7 @@ $(document).ready(function () {
 		removeBorder();
 		removeShow();
 		this.classList.add('tab--border');
-		const tabContentItem = document.querySelector(`#${this.id}-content`);
+		const tabContentItem = document.querySelector(`#${this.id} -content`);
 		tabContentItem.classList.add('show');
 	}
 
