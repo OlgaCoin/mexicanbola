@@ -36,7 +36,11 @@ button, button:active, button:focus {
 input:focus, textarea:focus {
 	outline:0;
 }
-a, a:hover {
+input[type=number] {
+	appearance:textfield;
+	-moz-appearance:textfield;
+}
+a, a:hover, a:focus {
 	text-decoration: none;
 }
 ul {

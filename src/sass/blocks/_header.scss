@@ -21,7 +21,7 @@
 	border-bottom: $border;
 	transition: box-shadow .2s;
    box-shadow: none;
-	z-index: 2;
+	z-index: 90;
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;

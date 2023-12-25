@@ -309,28 +309,50 @@ $(document).ready(function () {
 	});
 
 	/* Slick needs no get Reinitialized on window Resize after it was destroyed */
-	$(window).on('load resize orientationchange', function () {
-		$('.product__slider').each(function () {
-			var $carousel = $(this);
-			/* Initializes a slick carousel only on mobile screens */
-			// slick on mobile
-			if ($(window).width() > 768) {
-				if ($carousel.hasClass('slick-initialized')) {
-					$carousel.slick('unslick');
-				}
-			}
-			else {
-				if (!$carousel.hasClass('slick-initialized')) {
-					$carousel.slick({
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						speed: 800,
-						dots: true,
-						mobileFirst: true
-					});
-				}
+	// $(window).on('load resize orientationchange', function () {
+	// 	$('.product__slider').each(function () {
+	// 		var $carousel = $(this);
+	// 		/* Initializes a slick carousel only on mobile screens */
+	// 		// slick on mobile
+	// 		if ($(window).width() > 768) {
+	// 			if ($carousel.hasClass('slick-initialized')) {
+	// 				$carousel.slick('unslick');
+	// 			}
+	// 		}
+	// 		else {
+	// 			if (!$carousel.hasClass('slick-initialized')) {
+	// 				$carousel.slick({
+	// 					slidesToShow: 1,
+	// 					slidesToScroll: 1,
+	// 					speed: 800,
+	// 					dots: true,
+	// 					mobileFirst: true
+	// 				});
+	// 			}
+	// 		}
+	// 	});
+	// });
+
+	$(window).on('load', () => {
+		const element = $('.product__slider');
+		const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+		const handleSwitchSlick = ((e) => {
+			if (e.matches) {
+				element.slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					speed: 800,
+					dots: true,
+					mobileFirst: true
+				});
+			} else if (element.hasClass('slick-initialized')) {
+				element.slick('unslick');
 			}
 		});
+
+		mediaQuery.addListener(handleSwitchSlick);
+		handleSwitchSlick(mediaQuery);
 	});
 
 	// catalog sorting
@@ -391,7 +413,7 @@ $(document).ready(function () {
 		removeBorder();
 		removeShow();
 		this.classList.add('tab--border');
-		const tabContentItem = document.querySelector(`#${this.id} -content`);
+		const tabContentItem = document.querySelector(`#${this.id}-content`);
 		tabContentItem.classList.add('show');
 	}
 
@@ -469,6 +491,7 @@ $(document).ready(function () {
 			video.pause();
 		});
 	});
+
 
 });
 
